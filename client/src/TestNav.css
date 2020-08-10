@@ -1,0 +1,86 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none !important;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav__logo {
+  font-size: 1.6rem;
+  text-decoration: none !important;
+  color: #111111;
+}
+
+.nav__logoText {
+  color: #111111;
+  font-weight: 300;
+}
+
+.nav__links{
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link {
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  font-weight: 600;
+  color: #111111;
+}
+
+.nav__icons{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+
+.nav__searchInput {
+  height: 20px;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  background-color: #f1f1f1;
+  outline: none;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 5px;
+  position: relative;
+  right: 10px;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.nav__searchInput::placeholder {
+  color: #111111;
+  font-size: 1.2rem;
+  font-weight: 490;
+}
+
+.nav__search {
+  display: flex;
+  flex: 0.9;
+}
+
+.nav__searchIcon {
+  background-color: #f1f1f1;
+  padding: 0.8rem;
+  height: 1rem;
+  margin-left: 19px;
+  margin: 1rem 0;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+.nav__shoppingBasketIcon {
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+  color: #111111 !important;
+}
+
+.nav__accountBoxIcon {
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+  color: #111111 !important;
+}

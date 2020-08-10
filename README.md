@@ -1,5 +1,6 @@
 # LED-LIGHTS
 
+* [] Gravity LED, Space LED
 * [] Find LED strip
 * [] Soldering Iron
 * [] Find wires
@@ -7,17 +8,18 @@
 * [] Micro Controller
 * [] WLED Wifi accessible
   * [] https://github.com/Aircoookie/WLED
-* [] Company Name
+* [x] Company Name
+  * [] Gravity LEDs
 * [] Competitor ViralLEDS, look up LED on TikTok, @simswilson, its the one with 1.5 million likes
-* [] NavBar
+* [x] NavBar
   * [] Logo 
-  * [] Home
-  * [] Shop
-  * [] About Us
-  * [] Contact US
-  * [] Search Icon
-  * [] Cart Icon
-  * [] Profile Icon
+  * [x] Home
+  * [x] Shop
+  * [x] About Us
+  * [x] Contact US
+  * [x] Search Icon
+  * [x] Cart Icon
+  * [x] Profile Icon
 * [] Home
     * [] Big GIF for homescreen background of the cloud led light
     * [] What sets our leds apart from the competition
@@ -75,4 +77,14 @@
 * [] Orders
 * [] My Account
   * [] Shows who is signed in as
-
+* [x] Footer
+    * [x] Copyright
+    * [x] Company Name
+    * [x] Year
+    * [x] Home
+    * [x] Shop
+    * [x] About Us
+    * [x] Contact US
+    * [x] Cart Icon
+    * [x] Social Media Icons
+    
