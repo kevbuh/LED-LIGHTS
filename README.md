@@ -55,9 +55,9 @@
 
 
 * [] About Us
-* [] Contact Us
-  * [] Instagram DM
-  * [] Email straight to gmail account
+* [x] Contact Us
+  * [x] Instagram DM
+  * [x] Email straight to gmail account
   * [] House / PO Box address
 * [] Search for Products
   * [] Categories side bar with: 

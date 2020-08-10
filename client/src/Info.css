@@ -2,6 +2,8 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .info__comp {
@@ -21,7 +23,7 @@
 }
 .info__quality {
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   margin: 1rem 0;
 }
 
