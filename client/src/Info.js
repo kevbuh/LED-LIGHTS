@@ -33,6 +33,15 @@ function Info() {
         
         <span className="info__compInfo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea quae illum voluptate. Sint nam, commodi reiciendis ex excepturi quis dolore ducimus aspernatur necessitatibus perspiciatis earum praesentium iste architecto quisquam!</span>
       </div>
+      <div className="info__bad">
+      <div>
+        <div>
+          <span className="info__compInfo">Bad</span>
+          </div>
+        
+        <span className="info__compInfo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea quae illum voluptate. Sint nam, commodi reiciendis ex excepturi quis dolore ducimus aspernatur necessitatibus perspiciatis earum praesentium iste architecto quisquam!</span>
+      </div>
+      </div>
     </section>
   )
 }

@@ -9,17 +9,22 @@ import {
 import Footer from './Footer'
 import HomeScreen from './HomeScreen'
 import Info from './Info'
+import Featured from './Featured'
+import Products from './Products'
+import Contact from './Contact'
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
+
           <Route path="/shop">
-          <TestNav />
-            <h1>shop</h1>
+            <TestNav />
+            <Products />
             <Footer />
           </Route>
+
           <Route path="/about">
           <TestNav />
             <h1>about</h1>
@@ -27,7 +32,7 @@ function App() {
           </Route>
           <Route path="/contact">
           <TestNav />
-            <h1>contact</h1>
+            <Contact />
             <Footer />
           </Route>
           <Route path="/cart">
@@ -40,12 +45,15 @@ function App() {
             <h1>account</h1>
             <Footer />
           </Route>
+
           <Route path="/">
             <TestNav />
             <HomeScreen />
             <Info />
+            <Featured />
             <Footer />
           </Route>
+
         </Switch>
       </div>
     </Router>

@@ -9,10 +9,10 @@
 * [] WLED Wifi accessible
   * [] https://github.com/Aircoookie/WLED
 * [x] Company Name
-  * [] Gravity LEDs
+  * [x] Gravity LEDs
 * [] Competitor ViralLEDS, look up LED on TikTok, @simswilson, its the one with 1.5 million likes
 * [x] NavBar
-  * [] Logo 
+  * [x] Logo 
   * [x] Home
   * [x] Shop
   * [x] About Us
@@ -21,17 +21,17 @@
   * [x] Cart Icon
   * [x] Profile Icon
 * [] Home
-    * [] Big GIF for homescreen background of the cloud led light
-    * [] What sets our leds apart from the competition
+    * [x] Big GIF for homescreen background of the cloud led light
+    * [x] What sets our leds apart from the competition
       * [] 90 patterns and solid color
-    * [] Can be controlled vie wifi on your smartphone
+    * x[] Can be controlled via wifi on your smartphone
       * [] Not limited to a controller that you can lose
-    * [] Have twice the amount of LEDs per strip than most amazon LIGHTS
-    * [] Reasons why the generic leds are bad
+    * [z] Have twice the amount of LEDs per strip than most amazon LIGHTS
+    * [x] Reasons why the generic leds are bad
       * [] Can only be one solid color at a time
       * [] Have to be controlled from a controller
-* [] Shop
-    * [] Categories SideBar
+* [x] Shop
+    * [x] Categories SideBar
     * [] Products
       * [] Video Showcase
         * [] Youtube

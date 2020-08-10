@@ -1,0 +1,10 @@
+.featured__all img{
+ width: 150px;
+ padding: 1rem;
+}
+
+.featured__all {
+  display: flex;
+  margin: 1rem;
+  
+}

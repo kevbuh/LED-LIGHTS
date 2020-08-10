@@ -1,0 +1,41 @@
+.productcard {
+  display: flex;
+  margin: 1rem;
+}
+
+.productcard__card {
+  height: 35rem;
+  width: 25rem;
+  border-radius: 10px;
+  margin: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.productcard__cardImage {
+background-color: #f9f9f9;
+height: 100%;
+border-radius: 13px;
+overflow: hidden;
+}
+
+.productcard__cardTitle {
+  font-size: 2rem;
+  margin-bottom: 13px;
+}
+
+.productcard__cardInfo {
+  font-size: 1.1rem;
+  margin: 0 2rem;
+}
+
+.productcard__bottom {
+  display: flex;
+  position: relative;
+  top: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
