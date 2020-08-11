@@ -20,7 +20,7 @@ function Featured() {
 
         <Link to="/shop">
           <div className="featured__pic">
-          < img src="https://i.pinimg.com/564x/d1/1b/2a/d11b2a5c85c78690f1d6123e4af52769.jpg" alt="k" />
+          < img src="https://images.unsplash.com/photo-1583267926025-393ef3e5f878?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="k" />
           </div>
         </Link>
         
@@ -32,7 +32,7 @@ function Featured() {
         
         <Link to="/shop">
           <div className="featured__pic">
-            <img src="https://i.pinimg.com/564x/ac/76/2d/ac762dcbb4f1b3a7f2b09a98a001bec1.jpg" alt="k" />
+            <img src="https://images.unsplash.com/photo-1558249579-fde0d755f0b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="k" />
           </div>
         </Link>
         </div>

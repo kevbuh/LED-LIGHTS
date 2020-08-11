@@ -13,6 +13,9 @@ import Featured from './Featured'
 import Products from './Products'
 import Contact from './Contact'
 import BigProduct from './BigProduct'
+import OriginalProduct from './OriginalProduct'
+import BottomSection from './BottomSection'
+import Faqs from './Faqs'
 
 function App() {
   return (
@@ -51,12 +54,20 @@ function App() {
             <h1>account</h1>
             <Footer />
           </Route>
+          <Route path="/faqs">
+          <TestNav />
+            <Faqs />
+            <h1>faqs</h1>
+            <Footer />
+          </Route>
 
           <Route path="/">
             <TestNav />
             <HomeScreen />
             <Info />
+            <OriginalProduct />
             <Featured />
+            <BottomSection />
             <Footer />
           </Route>
 

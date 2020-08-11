@@ -26,3 +26,12 @@
   display: flex;
   justify-content: center;
 }
+
+.featured__pic img {
+  opacity: 0.9;
+}
+
+.featured__pic img:hover {
+  opacity: 1;
+  transition: 0.5s linear;
+}

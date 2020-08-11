@@ -1,0 +1,31 @@
+.originalproduct {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  color: #000000;
+}
+
+.originalproduct__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.originalproduct__title {
+  font-size: 3.5rem;
+}
+
+.originalproduct__info {
+  width: 50%;
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+
+.originalproduct__img {
+  height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
