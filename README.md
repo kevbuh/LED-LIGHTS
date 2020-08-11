@@ -1,16 +1,8 @@
 # LED-LIGHTS
 
-* [] Gravity LED, Space LED
-* [] Find LED strip
-* [] Soldering Iron
-* [] Find wires
-* [] Github code
-* [] Micro Controller
-* [] WLED Wifi accessible
-  * [] https://github.com/Aircoookie/WLED
+### Completed
 * [x] Company Name
   * [x] Gravity LEDs
-* [] Competitor ViralLEDS, look up LED on TikTok, @simswilson, its the one with 1.5 million likes
 * [x] NavBar
   * [x] Logo 
   * [x] Home
@@ -20,45 +12,40 @@
   * [x] Search Icon
   * [x] Cart Icon
   * [x] Profile Icon
-* [] Home
+* [x] Home
     * [x] Big GIF for homescreen background of the cloud led light
     * [x] What sets our leds apart from the competition
-      * [] 90 patterns and solid color
     * [x] Can be controlled via wifi on your smartphone
-      * [] Not limited to a controller that you can lose
     * [z] Have twice the amount of LEDs per strip than most amazon LIGHTS
     * [x] Reasons why the generic leds are bad
-      * [] Can only be one solid color at a time
-      * [] Have to be controlled from a controller
 * [x] Shop
     * [x] Categories SideBar
     * [x] Products
-      * [] Video Showcase
-        * [] Youtube
     * [x] Title
     * [x] Price
     * [x] Amount
     * [x] Quantity
     * [x] Add to Cart
     * [x] Description
-    * [] FAQS
-      * [] How to sync multiple LED strips
-      * [] Easy to install? 
-      * [] Once installed, can you take down the LED strip and put it somewhere else?
-      * [] Custom LED signs, parties, and more
-      * [] Different question
-        * [] Link to gmail
-    * [] Which credit cards they offer
-    * [] Return Policy
-    * [] Privacy Policy
+* [x] Footer
+    * [x] Copyright
+    * [x] Company Name
+    * [x] Year
+    * [x] Home
+    * [x] Shop
+    * [x] About Us
+    * [x] Contact US
+    * [x] Cart Icon
+    * [x] Social Media Icons
+  * [x] About Us
+  * [x] Contact Us
+    * [x] Instagram DM
+    * [x] Email straight to gmail account
+* [x] My Account
 
+### Todo
 
-
-* [x] About Us
-* [x] Contact Us
-  * [x] Instagram DM
-  * [x] Email straight to gmail account
-  * [] House / PO Box address
+* [] House / PO Box address
 * [] Search for Products
   * [] Categories side bar with: 
     * [] All Products
@@ -75,16 +62,29 @@
     * [] Link to email sent: https://mail.google.com/mail/u/0/#inbox/FMfcgxwJXLkRdsgJxzpLTsCdFSXVQbbf
 * [] Bookings
 * [] Orders
-* [x] My Account
-  * [] Shows who is signed in as
-* [x] Footer
-    * [x] Copyright
-    * [x] Company Name
-    * [x] Year
-    * [x] Home
-    * [x] Shop
-    * [x] About Us
-    * [x] Contact US
-    * [x] Cart Icon
-    * [x] Social Media Icons
-    
+* [] Shows who is signed in as
+* [] Gravity LED, Space LED
+* [] Find LED strip
+* [] Soldering Iron
+* [] Find wires
+* [] Github code
+* [] Micro Controller
+* [] Competitor ViralLEDS, look up LED on TikTok, @simswilson, its the one with 1.5 million likes
+* [] WLED Wifi accessible
+  * [] https://github.com/Aircoookie/WLED    
+* [] FAQS
+      * [] How to sync multiple LED strips
+      * [] Easy to install? 
+      * [] Once installed, can you take down the LED strip and put it somewhere else?
+      * [] Custom LED signs, parties, and more
+      * [] Different question
+        * [] Link to gmail
+    * [] Which credit cards they offer
+    * [] Return Policy
+    * [] Privacy Policy
+    * [] Can only be one solid color at a time
+    * [] Have to be controlled from a controller
+    * [] Not limited to a controller that you can lose
+    * [] 90 patterns and solid color
+ * [] Video Showcase   
+    * [] Youtube

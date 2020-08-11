@@ -14,7 +14,7 @@ function ProductCard(props) {
             <span className="productcard__cardInfo">{props.info}</span>
           </div>
         </div>
-      </Link>
+      </Link> 
     </section>
   )
 }

@@ -28,7 +28,8 @@ function App() {
 
           <Route path="/shop">
             <TestNav />
-            <Products />
+           {/* <SideNav /> */}
+            <Products /> 
             <Footer />
           </Route>
           <Route path="/products/original">
@@ -43,12 +44,12 @@ function App() {
             <Footer />
           </Route>
           <Route path="/contact">
-          <TestNav />
+            <TestNav />
             <Contact />
             <Footer />
           </Route>
           <Route path="/cart">
-          <TestNav />
+            <TestNav />
             <Cart />
             <Footer />
           </Route>
@@ -58,7 +59,7 @@ function App() {
             <Footer />
           </Route>
           <Route path="/faqs">
-          <TestNav />
+            <TestNav />
             <Faqs />
             <h1>faqs</h1>
             <Footer />

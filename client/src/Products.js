@@ -22,38 +22,20 @@ function Products() {
         
         <div className="shop__imgMediaCards">
           <ProductCard 
-          src={"https://i.pinimg.com/564x/ae/49/59/ae4959b9a83eb02ed43e32bb31ad7708.jpg"}
+          src={"https://i.pinimg.com/564x/d9/52/01/d95201cbe3f33bfc70ff0166d4e34f8c.jpg"}
           title={"Gravity Origin: Custom"}
           price={"45"}
           info={"The perfect LED lights for any occasion. Over 100 custom design patterns. Wireless connection to control lights through custom phone software. "}
-          
           />
           <ProductCard 
-          src={"https://i.pinimg.com/564x/ae/49/59/ae4959b9a83eb02ed43e32bb31ad7708.jpg"}
-          title={"Gravity Origin: Custom"}
-          price={"45"}
-          info={"The perfect LED lights for any occasion. Over 100 custom design patterns. Wireless connection to control lights through custom phone software. "}
-          
+          src={"https://hackaday.com/wp-content/uploads/2015/09/led-room-lights.jpg"}
+          title={"Gravity Origin: Simple"}
+          price={"30"}
+          info={" Over 100 custom design patterns. Wireless connection to control lights through custom phone software."}
           />
-          <ProductCard 
-          src={"https://i.pinimg.com/564x/ae/49/59/ae4959b9a83eb02ed43e32bb31ad7708.jpg"}
-          title={"Gravity Origin: Custom"}
-          price={"45"}
-          info={"The perfect LED lights for any occasion. Over 100 custom design patterns. Wireless connection to control lights through custom phone software. "}
-          
-          />
-          <ProductCard 
-          src={"https://i.pinimg.com/564x/ae/49/59/ae4959b9a83eb02ed43e32bb31ad7708.jpg"}
-          title={"Gravity Origin: Custom"}
-          price={"45"}
-          info={"The perfect LED lights for any occasion. Over 100 custom design patterns. Wireless connection to control lights through custom phone software. "}
-          
-          />
-          
         </div>
       </div>
       </div>
-      
     </section>
   )
 }

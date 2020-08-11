@@ -4,8 +4,20 @@ import SearchIcon from '@material-ui/icons/Search'
 import AccountBoxIcon from '@material-ui/icons/AccountBox'
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
 import './TestNav.css'
+import MenuIcon from '@material-ui/icons/Menu';
+import ClearIcon from '@material-ui/icons/Clear';
+
 
 function TestNav() {
+  const openMenu = () => {
+    document.querySelector(".sidebar").classList.add("open")
+    
+  }
+  const closeMenu = () => {
+    document.querySelector(".sidebar").classList.remove("open")
+    
+  }
+
   return (
     <nav className="nav">
       <div className="nav__logo">
@@ -23,41 +35,45 @@ function TestNav() {
       <div className="nav__links">
        <Link to="/" className="nav__link">
           <div className="nav__options">
-            <span  className="nav__optionLineTwo">Home</span>
+            <span  className="nav__optionLineTwo big">Home</span>
           </div>
         </Link>
 
         <Link to="/shop" className="nav__link">
           <div className="nav__options">
-            <span  className="nav__optionLineTwo">Shop</span>
+            <span  className="nav__optionLineTwo big">Shop</span>
           </div>
         </Link>
 
         <Link to="/about" className="nav__link">
           <div className="nav__options">
-            <span className="nav__optionLineOne">About Us</span>
+            <span className="nav__optionLineOne big">About Us</span>
           </div>
         </Link>
 
         <Link to="/contact" className="nav__link">
           <div className="nav__options">
-            <span className="nav__optionLineOne">Contact</span>
+            <span className="nav__optionLineOne big">Contact</span>
           </div>
         </Link>
 
         <div className="nav__icons">
           <Link to="/cart">
-            <div className="nav__shoppingBasketIcon">
+            <div className="nav__shoppingBasketIcon big">
             <ShoppingBasketIcon />
             </div>
           </Link>
 
-          <Link to="Account">
-            <div className="nav__accountBoxIcon">
+          <Link to="/account">
+            <div className="nav__accountBoxIcon big">
             <AccountBoxIcon />
             </div>
           </Link>    
-
+          {/* <div className="nav__sideNav">
+            <button className="nav__iconsSide1" onClick={openMenu}><MenuIcon className="nav__iconSideMenu" /></button>
+          </div> */}
+          
+          
         </div>
       </div>
     </nav>
