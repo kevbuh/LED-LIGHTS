@@ -3,7 +3,7 @@ import './Info.css'
 
 function Info() {
   return (
-    <section className="info">
+    <section className="info"> 
       <div className="info__comp">
         <div>
           <span className="info__compInfo">Better than the rest</span>

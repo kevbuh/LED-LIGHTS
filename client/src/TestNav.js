@@ -11,6 +11,7 @@ function TestNav() {
       <div className="nav__logo">
         <Link to="/">
         <span className="nav__logoText">Gravity LEDs</span>
+        <img src="./ledlogo.png" alt="." />
         </Link>
       </div>
 
