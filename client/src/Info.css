@@ -10,7 +10,7 @@
 
 .info__title {
   display: flex;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: 700;
   justify-content: center;
   margin: 4rem 0;
@@ -23,7 +23,7 @@
 }
 
 .info__reasonLeft {
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin: 1.3rem 0;
 }
@@ -33,6 +33,6 @@
 }
 
 .info__icon {
-  font-size: 3rem !important;
+  font-size: 2rem !important;
   margin: 1.3rem 0;
 }

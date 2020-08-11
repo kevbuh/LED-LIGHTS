@@ -16,6 +16,9 @@ import BigProduct from './BigProduct'
 import OriginalProduct from './OriginalProduct'
 import BottomSection from './BottomSection'
 import Faqs from './Faqs'
+import Cart from './Cart'
+import AccountDetails from './AccountDetails'
+import About from './About'
 
 function App() {
   return (
@@ -36,7 +39,7 @@ function App() {
 
           <Route path="/about">
           <TestNav />
-            <h1>about</h1>
+            <About />
             <Footer />
           </Route>
           <Route path="/contact">
@@ -46,12 +49,12 @@ function App() {
           </Route>
           <Route path="/cart">
           <TestNav />
-            <h1>cart</h1>
+            <Cart />
             <Footer />
           </Route>
           <Route path="/account">
-          <TestNav />
-            <h1>account</h1>
+            <TestNav />
+            <AccountDetails />
             <Footer />
           </Route>
           <Route path="/faqs">

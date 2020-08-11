@@ -1,0 +1,24 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  background: url('https://images.unsplash.com/photo-1527490377857-20c31daa3b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
+  background-size: cover;
+  color: #ffffff;
+}
+
+.about__text {
+  margin: 0 3rem;
+}
+
+.about__title {
+  font-size: 4rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+.about__info {
+  font-size: 2rem;
+  width: 60%;
+}

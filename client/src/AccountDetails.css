@@ -1,0 +1,59 @@
+.account {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+  align-items: center;
+  height: 60vh;
+}
+.account__bottom {
+  display: flex;
+}
+
+.account__left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+.account__details {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+}
+
+.account__right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  border-left: 2px solid #111111;
+}
+
+.account__history {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.9rem;
+}
+
+.account__name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.account__addressTitle {
+  margin-bottom: 2rem;
+}
+
+.account__addressTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.account__email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding-right: 4rem;
+}

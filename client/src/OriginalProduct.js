@@ -10,7 +10,7 @@ function OriginalProduct() {
           <span> LED Light</span>
         </div>
         <div className="originalproduct__info">
-          <span>Built with the WLED softwware and FF85 Microcontrolelr, the Gravity Origin is bound to keep you satisfied. Perfect for any room, explore the countless patterns and colors it comes with</span>
+          <span>Built with the WLED software and FF85 Microcontroller, the Gravity Origin is bound to keep you satisfied. Perfect for any room, explore the countless patterns and colors it comes with. </span>
         </div>
       </div>
 

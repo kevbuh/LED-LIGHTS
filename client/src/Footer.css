@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-evenly;
   background-color: #ffffff;
-  padding: 1.3rem 0;
-  height: 8vw;
+  padding: 1.8rem 0;
+  height: 10vw;
   padding: 2rem;
   vertical-align: top;
 }
@@ -12,17 +12,18 @@
   display: flex;
   flex-direction: column;
   color: #111;
-  font-size: 22px;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .footer__link {
   color: #111;
-  font-size: 18px;
+  font-size: 0.9rem;
 }
 
 .footer__quickLinks {
   color: #111;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 1.5rem;
   text-decoration: solid !important;
 }

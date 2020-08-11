@@ -10,7 +10,10 @@ function BigProduct() {
   return (
     <section className="bigproduct">
       <div className="bigproduct__left">
-        <img className="bigproduct__image" src="https://i.pinimg.com/564x/ae/49/59/ae4959b9a83eb02ed43e32bb31ad7708.jpg" alt="original" />
+        <img className="bigproduct__image" 
+        src={"https://i.pinimg.com/564x/ae/49/59/ae4959b9a83eb02ed43e32bb31ad7708.jpg"} 
+        alt="original" 
+        />
       </div>
       <div className="bigproduct__right">
         <div className="bigproduct__title">

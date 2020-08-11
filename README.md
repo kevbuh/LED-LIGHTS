@@ -24,7 +24,7 @@
     * [x] Big GIF for homescreen background of the cloud led light
     * [x] What sets our leds apart from the competition
       * [] 90 patterns and solid color
-    * x[] Can be controlled via wifi on your smartphone
+    * [x] Can be controlled via wifi on your smartphone
       * [] Not limited to a controller that you can lose
     * [z] Have twice the amount of LEDs per strip than most amazon LIGHTS
     * [x] Reasons why the generic leds are bad
@@ -54,7 +54,7 @@
 
 
 
-* [] About Us
+* [x] About Us
 * [x] Contact Us
   * [x] Instagram DM
   * [x] Email straight to gmail account
@@ -75,7 +75,7 @@
     * [] Link to email sent: https://mail.google.com/mail/u/0/#inbox/FMfcgxwJXLkRdsgJxzpLTsCdFSXVQbbf
 * [] Bookings
 * [] Orders
-* [] My Account
+* [x] My Account
   * [] Shows who is signed in as
 * [x] Footer
     * [x] Copyright

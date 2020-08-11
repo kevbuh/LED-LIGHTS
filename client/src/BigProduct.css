@@ -1,6 +1,6 @@
 .bigproduct {
   display: flex;
-  height: 75vh;
+  height: 120vh;
 }
 
 .bigproduct__left {
@@ -18,7 +18,7 @@
 }
 
 .bigproduct__title {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid #111;
   padding: 1.3rem 0;
@@ -26,12 +26,12 @@
 }
 
 .bigproduct__price {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 2rem;
 }
 
 .bigproduct__amount {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
 }
 
@@ -41,7 +41,7 @@
 }
 .bigproduct__info {
   font-size: 1.2rem;
-  width: 35%;
+  width: 50%;
   margin-bottom: 3.2rem;
 }
 
@@ -52,7 +52,7 @@
 .bigproduct__addToCart {
   border: 2px solid #000000;
   width: 8vw;
-  padding: 0.7rem 0.4rem;
+  padding: 0.7rem 0.9rem;
   font-size: 1.3rem;
   font-weight: 5  00;
   color: #111111;

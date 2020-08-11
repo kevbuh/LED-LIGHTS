@@ -1,16 +1,16 @@
 .contact {
   display: flex;
-  height: 80vh;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   margin: 1rem 0;
 }
 
 .contact__contactTitle {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   margin: 2rem;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .contact__info {
@@ -48,7 +48,7 @@
 }
 
 .contact__title {
-  font-size: 7rem;
+  font-size: 5rem;
   border-bottom: 2px solid #111;
   padding: 1rem;
   font-weight: 300;
