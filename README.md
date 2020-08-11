@@ -32,15 +32,15 @@
       * [] Have to be controlled from a controller
 * [x] Shop
     * [x] Categories SideBar
-    * [] Products
+    * [x] Products
       * [] Video Showcase
         * [] Youtube
-    * [] Title
-    * [] Price
-    * [] Amount
-    * [] Quantity
-    * [] Add to Cart
-    * [] Description
+    * [x] Title
+    * [x] Price
+    * [x] Amount
+    * [x] Quantity
+    * [x] Add to Cart
+    * [x] Description
     * [] FAQS
       * [] How to sync multiple LED strips
       * [] Easy to install? 

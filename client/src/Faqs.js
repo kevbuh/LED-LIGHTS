@@ -7,6 +7,6 @@ function Faqs() {
       faqs
     </div>
   )
-}
+} 
 
 export default Faqs

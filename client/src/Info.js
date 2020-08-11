@@ -1,47 +1,62 @@
 import React from 'react'
 import './Info.css'
+import CheckIcon from '@material-ui/icons/Check';
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
+import WifiIcon from '@material-ui/icons/Wifi';
+import CancelIcon from '@material-ui/icons/Cancel';
 
 function Info() {
   return (
     <section className="info"> 
-      <div className="info__comp">
-        <div>
-          <span className="info__compInfo">Better than the rest</span>
+      <div className="info__title">
+        <span>Why Use Gravity LEDs?</span>
         </div>
-        <span className="info__compInfo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea quae illum voluptate. Sint nam, commodi reiciendis ex excepturi quis dolore ducimus aspernatur necessitatibus perspiciatis earum praesentium iste architecto quisquam!</span>
-      </div>
-
-      <div className="info__lights">
-        <div>
-          <span className="info__compInfo">lights</span>
+        <ul>
+          <li>
+            <div className="info__reason">
+          <div className="info__reasonLeft">
+            <span>Easy to use</span>
+          </div>
+          <div className="info__reasonRight">
+            <InsertEmoticonIcon className="info__icon"/>
+          </div>
         </div>
-        <span className="info__compInfo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea quae illum voluptate. Sint nam, commodi reiciendis ex excepturi quis dolore ducimus aspernatur necessitatibus perspiciatis earum praesentium iste architecto quisquam!</span>
-      </div>
-
-      <div className="info__wifi">
-      <div>
-          <span className="info__compInfo">wifi</span>
-          </div>
+          </li>
         
-        <span className="info__compInfo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea quae illum voluptate. Sint nam, commodi reiciendis ex excepturi quis dolore ducimus aspernatur necessitatibus perspiciatis earum praesentium iste architecto quisquam!</span>
-      </div>
-
-      <div className="info__quality">
-      <div>
-          <span className="info__compInfo">quality</span>
+<li>
+  <div className="info__reason">
+          <div className="info__reasonLeft">
+            <span>Wifi Enabled</span>
           </div>
-        
-        <span className="info__compInfo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea quae illum voluptate. Sint nam, commodi reiciendis ex excepturi quis dolore ducimus aspernatur necessitatibus perspiciatis earum praesentium iste architecto quisquam!</span>
-      </div>
-      <div className="info__bad">
-      <div>
-        <div>
-          <span className="info__compInfo">Bad</span>
+          <div className="info__reasonRight">
+            <WifiIcon className="info__icon"/>
           </div>
+        </div>
+</li>
         
-        <span className="info__compInfo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ea quae illum voluptate. Sint nam, commodi reiciendis ex excepturi quis dolore ducimus aspernatur necessitatibus perspiciatis earum praesentium iste architecto quisquam!</span>
-      </div>
-      </div>
+        <li>
+          <div className="info__reason">
+          <div className="info__reasonLeft">
+            <span>No Controller</span>
+          </div>
+          <div className="info__reasonRight">
+            <CancelIcon className="info__icon"/>
+          </div>
+        </div>
+        </li>
+        
+<li>
+  <div className="info__reason">
+          <div className="info__reasonLeft">
+            <span>Tons of patterns</span>
+          </div>
+          <div className="info__reasonRight">
+            <CheckIcon className="info__icon"/>
+          </div>
+        </div>
+</li>
+        
+        </ul>
     </section>
   )
 }

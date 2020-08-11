@@ -22,7 +22,9 @@
 }
 
 .homescreen__logoInfo {
-  font-size: 30px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .homescreen__buttonField {
@@ -31,7 +33,7 @@
   background: #ffffff;
   padding: 1rem;
   border-radius: 5px;
-  margin-left: 5rem;
+
   font-size: 2rem;
   font-weight: 600;
   align-items: center;
@@ -41,7 +43,7 @@
 .homescreen__logo {
   font-size: 4rem;
   background: #ffffff;
-  padding: 1.5rem;
+  padding: 1.5rem 3rem ;
   border-radius: 5px;
 }
 

@@ -12,6 +12,7 @@ import Info from './Info'
 import Featured from './Featured'
 import Products from './Products'
 import Contact from './Contact'
+import BigProduct from './BigProduct'
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
           <Route path="/shop">
             <TestNav />
             <Products />
+            <Footer />
+          </Route>
+          <Route path="/products/original">
+            <TestNav />
+            <BigProduct />
             <Footer />
           </Route>
 
