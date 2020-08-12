@@ -45,6 +45,11 @@
 
 ### Todo
 
+* [] Server
+  * [] Login Page
+  * [] Register Page
+  * [] Display name on account
+
 * [] House / PO Box address
 * [] Search for Products
   * [] Categories side bar with: 
