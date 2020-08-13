@@ -1,9 +1,6 @@
-import React from 'react'
-import TransitionAlerts from './MAlerts'
+import React from "react";
 
 class FormAlerts extends React.Component {
-
-
   // constructor(props){
   //   super(props)
   //   this.state = {apiResponse:""}
@@ -21,39 +18,31 @@ class FormAlerts extends React.Component {
   //   this.callAPI()
   // }
 
-  // // ifError = () => {if(typeof errors != 'undefined'){   
-  // //         errors.forEach((error) => { 
+  // // ifError = () => {if(typeof errors != 'undefined'){
+  // //         errors.forEach((error) => {
   // //             <TransitionAlerts name={this.state.res.locals.error} />
   // //             })} }
 
-  // // ifSuccess = () => {if(success_msg != '') { 
+  // // ifSuccess = () => {if(success_msg != '') {
   // //                 <TransitionAlerts name={this.state.res.locals.success_msg} />
   // //             } }
 
-  // // ifErrorMsg = () => {if(error_msg != '') { 
+  // // ifErrorMsg = () => {if(error_msg != '') {
   // //                 <TransitionAlerts name={this.state.res.locals.error_msg} />
   // //             } }
 
-  // // ifErrorLast = () => {if(error != '') { 
+  // // ifErrorLast = () => {if(error != '') {
   // //                 <TransitionAlerts name={this.state.res.locals.error} />
   // //             } }
 
   render() {
     return (
-        <div>
-          {/* <p>{this.state.res.locals.success_msg}</p> */}
-          <p> TODO: Form Validation </p>
-          
-
-              
-
-              
-
-              
-        </div>
-      )
+      <div>
+        {/* <p>{this.state.res.locals.success_msg}</p> */}
+        <p> TODO: Form Validation </p>
+      </div>
+    );
   }
 }
 
-
-export default FormAlerts
+export default FormAlerts;

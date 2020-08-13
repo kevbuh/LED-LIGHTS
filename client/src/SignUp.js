@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 // import SimpleAlerts from './MAlerts'
 // import FormAlerts from './FormAlerts'
 // import TransitionAlerts from './MAlerts'
+import "./Login.css";
 
-function Login() {
+function SignUp() {
   return (
     <section className="login">
       <div className="login__form">
@@ -16,15 +17,32 @@ function Login() {
         <Link to="/">
           <h6>Gravity LEDS</h6>
         </Link>
+        <Link to="/">
+          <h4>Sign Up</h4>
+        </Link>
 
         {/* <TransitionAlerts text={"Hello"} /> */}
-        <form action="/users/login" method="POST">
+        <form action="/users/register" method="POST">
           <div className="login__textbox">
-            <input type="text" placeholder="Username or Email" />
+            <input
+              type="name"
+              id="name"
+              name="name"
+              placeholder="Enter Name"
+              value="{ typeof name != 'undefined' ? name : '' }"
+            />
+            <span className="login__check-message hidden">Required</span>
+          </div>
+          <div className="login__textbox">
+            <input type="email" placeholder="Email" />
             <span className="login__check-message hidden">Required</span>
           </div>
           <div className="login__textbox">
             <input type="password" placeholder="Password" />
+            <span className="login__check-message hidden">Required</span>
+          </div>
+          <div className="login__textbox">
+            <input type="password" placeholder="Confirm Password" />
             <span className="login__check-message hidden">Required</span>
           </div>
 
@@ -36,34 +54,25 @@ function Login() {
               </span>
               Remember me
             </label>
-
             <a href="/">Forgot Password?</a>
           </div>
 
           <button type="submit" className="login__login-btn" disabled>
-            Log In Now
+            Sign Up
           </button>
 
-          {/* <div className="login__section">
-          <div className="login__or">
-            <p>or</p>
-          </div>
-          <a href="/auth/google" className="login__google-button">
-            <i className="fab fa-google left"></i> Log In with google
-          </a>
-        </div> */}
           <div className="login__privacy-link">
             <a href="/">Privacy Policy</a>
           </div>
         </form>
 
         <div className="login__dont-have-account">
-          Don't Have an account?
-          <a href="/users/register">Sign Up</a>
+          Already have an account?
+          <a href="/users/login">Log In</a>
         </div>
       </div>
     </section>
   );
 }
 
-export default Login;
+export default SignUp;

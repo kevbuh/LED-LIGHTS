@@ -1,54 +1,58 @@
-import React, { useEffect } from 'react';
-import './App.css';
-import TestNav from './TestNav'
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from 'react-router-dom';
-import Footer from './Footer'
-import HomeScreen from './HomeScreen'
-import Info from './Info'
-import Featured from './Featured'
-import Products from './Products'
-import Contact from './Contact'
-import BigProduct from './BigProduct'
-import OriginalProduct from './OriginalProduct'
-import BottomSection from './BottomSection'
-import Faqs from './Faqs'
-import Cart from './Cart'
-import AccountDetails from './AccountDetails'
-import About from './About'
-import Login from './Login'
-import { listLogEntries } from './API'
+import React, { useEffect } from "react";
+import "./App.css";
+import TestNav from "./TestNav";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "./Footer";
+import HomeScreen from "./HomeScreen";
+import Info from "./Info";
+import Featured from "./Featured";
+import Products from "./Products";
+import Contact from "./Contact";
+import BigProduct from "./BigProduct";
+import OriginalProduct from "./OriginalProduct";
+import BottomSection from "./BottomSection";
+import Faqs from "./Faqs";
+// import Cart from './Cart'
+import AccountDetails from "./AccountDetails";
+import About from "./About";
+import Login from "./Login";
+import { listLogEntries } from "./API";
+import SignUp from "./SignUp";
+import Checkout from "./Checkout";
+import HomeTest from "./HomeTest";
 
-const App =  () => {
-  
-
+const App = () => {
   useEffect(() => {
     (async () => {
       const logEntries = await listLogEntries();
-      console.log(logEntries)
+      console.log(logEntries);
     })();
   }, []);
-
-
 
   return (
     <Router>
       <div className="App">
         <Switch>
+          <Route path="/users/register">
+            <SignUp />
+          </Route>
 
           <Route path="/shop">
             <TestNav />
-           {/* <SideNav /> */}
-            <Products /> 
+            {/* <SideNav /> */}
+            <Products />
+            <HomeTest />
             <Footer />
           </Route>
 
           <Route path="/products/original">
             <TestNav />
             <BigProduct />
+            <Footer />
+          </Route>
+          <Route path="/checkout">
+            <TestNav />
+            <Checkout />
             <Footer />
           </Route>
 
@@ -58,12 +62,10 @@ const App =  () => {
             {/* <SignIn /> */}
           </Route>
 
-          <Route path="/users/register">
-            {/* Add register Here */}
-          </Route>
+          <Route path="/users/register">{/* Add register Here */}</Route>
 
           <Route path="/about">
-          <TestNav />
+            <TestNav />
             <About />
             <Footer />
           </Route>
@@ -72,11 +74,11 @@ const App =  () => {
             <Contact />
             <Footer />
           </Route>
-          <Route path="/cart">
+          {/* <Route path="/cart">
             <TestNav />
             <Cart />
             <Footer />
-          </Route>
+          </Route> */}
           <Route path="/account">
             <TestNav />
             <AccountDetails />
@@ -90,7 +92,6 @@ const App =  () => {
           </Route>
 
           <Route path="/">
-            
             <TestNav />
             <HomeScreen />
             <Info />
@@ -99,12 +100,10 @@ const App =  () => {
             <BottomSection />
             <Footer />
           </Route>
-
         </Switch>
       </div>
     </Router>
   );
-}
-
+};
 
 export default App;
