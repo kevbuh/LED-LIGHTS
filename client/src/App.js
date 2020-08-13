@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import TestNav from './TestNav'
 import {
@@ -19,8 +19,21 @@ import Faqs from './Faqs'
 import Cart from './Cart'
 import AccountDetails from './AccountDetails'
 import About from './About'
+import Login from './Login'
+import { listLogEntries } from './API'
 
-function App() {
+const App =  () => {
+  
+
+  useEffect(() => {
+    (async () => {
+      const logEntries = await listLogEntries();
+      console.log(logEntries)
+    })();
+  }, []);
+
+
+
   return (
     <Router>
       <div className="App">
@@ -32,10 +45,21 @@ function App() {
             <Products /> 
             <Footer />
           </Route>
+
           <Route path="/products/original">
             <TestNav />
             <BigProduct />
             <Footer />
+          </Route>
+
+          <Route path="/users/login">
+            {/* Add Login Here */}
+            <Login />
+            {/* <SignIn /> */}
+          </Route>
+
+          <Route path="/users/register">
+            {/* Add register Here */}
           </Route>
 
           <Route path="/about">
@@ -66,6 +90,7 @@ function App() {
           </Route>
 
           <Route path="/">
+            
             <TestNav />
             <HomeScreen />
             <Info />
@@ -80,5 +105,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;

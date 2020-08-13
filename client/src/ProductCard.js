@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function ProductCard(props) {
   return (
-    <section classname="productcard">
+    <section>
       <Link to="/products/original">
         <div className="productcard__card">
           <img src={props.src} alt="." className="productcard__cardImage" />

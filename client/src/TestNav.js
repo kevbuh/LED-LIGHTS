@@ -4,8 +4,6 @@ import SearchIcon from '@material-ui/icons/Search'
 import AccountBoxIcon from '@material-ui/icons/AccountBox'
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
 import './TestNav.css'
-import MenuIcon from '@material-ui/icons/Menu';
-import ClearIcon from '@material-ui/icons/Clear';
 
 
 function TestNav() {
@@ -56,6 +54,12 @@ function TestNav() {
             <span className="nav__optionLineOne big">Contact</span>
           </div>
         </Link>
+        <Link to="/users/login" className="nav__link">
+          <div className="nav__options">
+            <span className="nav__optionLineOne big">Login</span>
+          </div>
+        </Link>
+      
 
         <div className="nav__icons">
           <Link to="/cart">
@@ -69,6 +73,7 @@ function TestNav() {
             <AccountBoxIcon />
             </div>
           </Link>    
+          
           {/* <div className="nav__sideNav">
             <button className="nav__iconsSide1" onClick={openMenu}><MenuIcon className="nav__iconSideMenu" /></button>
           </div> */}

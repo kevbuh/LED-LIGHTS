@@ -46,7 +46,8 @@
 ### Todo
 
 * [] Server
-  * [] Login Page
+  * [x] Login Page
+    * [] Flash errors
   * [] Register Page
   * [] Display name on account
 
