@@ -1,6 +1,8 @@
 import React from "react";
-import Star from "@material-ui/icons/Star";
+// import Star from "@material-ui/icons/Star";
 import { useStateValue } from "./contexts/StateProvider";
+import "./Cart.css";
+import ClearIcon from "@material-ui/icons/Clear";
 
 function CheckoutProduct({ id, title, price, image }) {
   const [{ cart }, dispatch] = useStateValue();
@@ -12,25 +14,53 @@ function CheckoutProduct({ id, title, price, image }) {
     });
   };
 
+  const addToCart = () => {
+    dispatch({
+      type: "ADD_TO_CART",
+      item: {
+        id: id,
+        title: title,
+        price: price,
+        // rating: rating, !!!!!if you want to use again, add to the props
+        image: image,
+      },
+    });
+  };
+
   return (
-    <div className="checkoutProduct">
-      <img src={image} className="checkoutProduct__image" alt="" />
-      <div className="checkoutProduct__info">
-        <p className="checkoutProduct__title">{title}</p>
-        <p className="checkoutProduct__price">
-          <small>$</small>
-          <strong>{price}</strong>
-        </p>
-        {/* <div className="checkoutProduct__rating">
-          {Array(rating)
-            .fill()
-            .map((_) => (
-              <p>
-                <Star className="product__star" />
-              </p>
-            ))}
-        </div> */}
-        <button onClick={RemoveFromCart}>Remove from cart</button>
+    <div className="cart">
+      <div className="cart__left">
+        <div className="cart__cart">
+          <img className="cart__cartImage" src={image} alt="." />
+          <div className="cart__cartInfo">
+            <div className="cart__cartID">
+              <span>{id}</span>
+              <span>
+                <ClearIcon onClick={RemoveFromCart} className="cart__clear" />
+              </span>
+            </div>
+            <div className="cart__cartInfoText">
+              <div className="cart__cartThree">
+                <span>
+                  <a href="/shop">
+                    <strong>{title}</strong>
+                  </a>
+                </span>
+                <span onClick={addToCart}>+</span>
+                <span>|</span>
+                <span onClick={RemoveFromCart}>-</span>
+                <span>${price}</span>
+              </div>
+            </div>
+
+            <div>
+              The perfect LED lights for any occasion. Over 100 custom design
+              patterns. Wireless connection to control lights through custom
+              phone software. The best led strip out there. Easy to install.
+              Best in class for ease of use. Uses the WLED software.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

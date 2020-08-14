@@ -10,14 +10,14 @@ function Home() {
           title="Gravity Origin: Custom"
           price={45}
           // rating={5}
-          image="https://m.media-amazon.com/images/I/51UoqRAxwEL.jpg"
+          image="https://i.pinimg.com/564x/d9/52/01/d95201cbe3f33bfc70ff0166d4e34f8c.jpg"
         />
         <Product
           id="0002"
           title="Gravity Origin: Simple"
           price={30}
           // rating={4}
-          image="https://images-na.ssl-images-amazon.com/images/I/71J-YtSUd3L._AC_UX679_.jpg"
+          image="https://hackaday.com/wp-content/uploads/2015/09/led-room-lights.jpg"
         />
       </div>
     </div>

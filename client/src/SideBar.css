@@ -4,16 +4,15 @@
   list-style-type: none;
   width: 90%;
   height: 26vh;
-  border-radius: 15px;
   background: #fff;
 }
 
-.sidebar__types li{
+.sidebar__types li {
   list-style-type: none;
 }
 
 .sidebar__title {
-  font-size: 30px;
+  font-size: 1.3rem;
   margin: 1rem;
   font-weight: 700;
   border-bottom: 4px solid #111;
@@ -21,7 +20,7 @@
 }
 
 .sidebar__types {
-  font-size: 20px;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
   font-weight: 500;
 }

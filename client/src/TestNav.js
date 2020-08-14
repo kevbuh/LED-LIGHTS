@@ -7,7 +7,7 @@ import "./TestNav.css";
 import { useStateValue } from "./contexts/StateProvider";
 
 function TestNav() {
-  const [{ basket }] = useStateValue();
+  const [{ cart, user }] = useStateValue();
 
   return (
     <nav className="nav">
@@ -61,7 +61,7 @@ function TestNav() {
           <Link to="/checkout">
             <div className="nav__shoppingBasketIcon big">
               <ShoppingBasketIcon />
-              {basket?.length}
+              <span className="nav__cartLength">{cart?.length}</span>
             </div>
           </Link>
 

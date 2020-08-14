@@ -1,8 +1,7 @@
-.featured__all img{
-
- height: 25vw;
- margin: 1rem;
- overflow: hidden;
+.featured__all img {
+  height: 25vw;
+  margin: 1rem;
+  overflow: hidden;
 }
 
 .featured__all {
@@ -29,6 +28,7 @@
 
 .featured__pic img {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .featured__pic img:hover {

@@ -1,10 +1,10 @@
-import React from 'react'
-import './ProductCard.css'
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./ProductCard.css";
+import { Link } from "react-router-dom";
 
 function ProductCard(props) {
   return (
-    <section>
+    <section className="productcard">
       <Link to="/products/original">
         <div className="productcard__card">
           <img src={props.src} alt="." className="productcard__cardImage" />
@@ -14,9 +14,9 @@ function ProductCard(props) {
             <span className="productcard__cardInfo">{props.info}</span>
           </div>
         </div>
-      </Link> 
+      </Link>
     </section>
-  )
+  );
 }
 
-export default ProductCard
+export default ProductCard;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, setState } from "react";
 import "./App.css";
 import TestNav from "./TestNav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -12,14 +12,17 @@ import BigProduct from "./BigProduct";
 import OriginalProduct from "./OriginalProduct";
 import BottomSection from "./BottomSection";
 import Faqs from "./Faqs";
-// import Cart from './Cart'
+import Cart from "./Cart";
 import AccountDetails from "./AccountDetails";
 import About from "./About";
 import Login from "./Login";
 import { listLogEntries } from "./API";
 import SignUp from "./SignUp";
 import Checkout from "./Checkout";
-import HomeTest from "./HomeTest";
+import PrivacyPolicy from "./PrivacyPolicy";
+import usePersistedState from "./reducers/localreducer";
+import ProductBig from "./ProductBig";
+// import HomeTest from "./HomeTest";
 
 const App = () => {
   useEffect(() => {
@@ -28,6 +31,45 @@ const App = () => {
       console.log(logEntries);
     })();
   }, []);
+
+  // const [{ cart }, dispatch] = useStateValue();
+
+  // // useEffect(() => {
+  // //   const data = localStorage.getItem('my-cart')
+  // //   if (data) {
+  // //     dispatch(JSON.parse(data)
+  // // }, []);
+  // useEffect(() => {
+  //   dispatch({
+  //     type: SET_POSTS,
+  //     value: JSON.parse(localStorage.getItem("my-cart")) || [],
+  //   });
+  // }, []);
+
+  // useEffect(() => {
+  //   localStorage.setItem("my-cart", JSON.stringify({ cart }));
+  // });
+  usePersistedState();
+
+  // let localCart = localStorage.getItem({ cart });
+
+  // //this is called on component mount
+  // useEffect(() => {
+  //   //turn it into js
+  //   localCart = JSON.parse(localCart);
+  //   //load persisted cart into state if it exists
+  //   if (localCart) localStorage.setItem("cart", localCart);
+  // }, []); //the empty array ensures useEffect only runs once
+
+  // // let localCart = localStorage.getItem("cart");
+
+  // // //this is called on component mount
+  // // useEffect(() => {
+  // //   //turn it into js
+  // //   localCart = JSON.parse(localCart);
+  // //   //load persisted cart into state if it exists
+  // //   if (localCart) localStorage.setItem("cart", localCart);
+  // // }, []); //the empty array ensures useEffect only runs once
 
   return (
     <Router>
@@ -41,15 +83,28 @@ const App = () => {
             <TestNav />
             {/* <SideNav /> */}
             <Products />
-            <HomeTest />
+            {/* <HomeTest /> */}
+            <Footer />
+          </Route>
+
+          <Route path="/privacy">
+            <TestNav />
+            <PrivacyPolicy />
             <Footer />
           </Route>
 
           <Route path="/products/original">
             <TestNav />
-            <BigProduct />
+            <ProductBig
+              id="#8F26HD7"
+              title="Gravity Origin"
+              price={50}
+              // rating={5}
+              image="https://images.unsplash.com/photo-1583267926025-393ef3e5f878?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+            />
             <Footer />
           </Route>
+
           <Route path="/checkout">
             <TestNav />
             <Checkout />
@@ -74,11 +129,11 @@ const App = () => {
             <Contact />
             <Footer />
           </Route>
-          {/* <Route path="/cart">
+          <Route path="/cart">
             <TestNav />
             <Cart />
             <Footer />
-          </Route> */}
+          </Route>
           <Route path="/account">
             <TestNav />
             <AccountDetails />

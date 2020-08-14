@@ -12,6 +12,11 @@ export const getTotal = (cart) =>
 const reducer = (state, action) => {
   console.log(action);
   switch (action.type) {
+    case "SET_POSTS":
+      const statusReadFromLocalStorage = JSON.parse(
+        localStorage.getItem("my-cart") || "{}"
+      );
+      return statusReadFromLocalStorage;
     case "SET_USER":
       return {
         ...state,

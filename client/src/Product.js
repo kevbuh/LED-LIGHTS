@@ -1,6 +1,8 @@
 import React from "react";
 // import Star from "@material-ui/icons/Star";
 import { useStateValue } from "./contexts/StateProvider";
+import "./ProductCard.css";
+import { Link } from "react-router-dom";
 
 function Product({ id, title, price, image }) {
   const [{ cart }, dispatch] = useStateValue();
@@ -19,14 +21,16 @@ function Product({ id, title, price, image }) {
   };
 
   return (
-    <div className="product">
-      <div className="product__info">
-        <p>{title}</p>
-        <p className="product__price">
-          <small>$</small>
-          <strong>{price}</strong>
-        </p>
-        {/* <div className="product__rating">
+    <div className="productcard__card test">
+      <Link to="/products/original">
+        <div className="product__info">
+          <img className="productcard__cardImage" src={image} alt="" />
+          <p className="productcard__cardInfo">{title}</p>
+          <p className="productcard__cardInfo">
+            <small>$</small>
+            <strong>{price}</strong>
+          </p>
+          {/* <div className="product__rating">
           Creating an array of size $rating
           {Array(rating)
             .fill()
@@ -36,9 +40,11 @@ function Product({ id, title, price, image }) {
               </p>
             ))}
         </div> */}
-      </div>
-      <img src={image} alt="" />
-      <button onClick={addToCart}>Add to Cart</button>
+        </div>
+      </Link>
+      <button className="productcard__button" onClick={addToCart}>
+        Add to Cart
+      </button>
     </div>
   );
 }
