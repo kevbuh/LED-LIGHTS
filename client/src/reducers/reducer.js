@@ -1,27 +1,23 @@
 export const initialState = {
   cart: [],
-  user: null,
+  // user: null,
 };
 
 export const getTotal = (cart) =>
   cart?.reduce((amount, item) => item.price + amount, 0);
-{
-  /* selector */
-}
 
 const reducer = (state, action) => {
-  console.log(action);
   switch (action.type) {
-    case "SET_POSTS":
-      const statusReadFromLocalStorage = JSON.parse(
-        localStorage.getItem("my-cart") || "{}"
-      );
-      return statusReadFromLocalStorage;
-    case "SET_USER":
-      return {
-        ...state,
-        user: action.user,
-      };
+    // case "SET_POSTS":
+    //   const statusReadFromLocalStorage = JSON.parse(
+    //     localStorage.getItem("my-cart") || "{}"
+    //   );
+    //   return statusReadFromLocalStorage;
+    // case "SET_USER":
+    //   return {
+    //     ...state,
+    //     user: action.user,
+    //   };
     case "ADD_TO_CART":
       return {
         ...state,
