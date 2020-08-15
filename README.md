@@ -49,8 +49,8 @@
 - [] Form Validation
 - [] Submit user info to Server
 - [] Show user info in account
-- [] Big product page for custom water proof
-- [] waterproof symbol
+- [x] Big product page for custom water proof
+- [x] waterproof symbol
 
 * [] Shopping Cart
 
