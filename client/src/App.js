@@ -22,6 +22,8 @@ import Checkout from "./Checkout";
 import PrivacyPolicy from "./PrivacyPolicy";
 import usePersistedState from "./reducers/localreducer";
 import ProductBig from "./ProductBig";
+import Stripe from "./Stripe";
+import TestLogin from "./TestLogin";
 // import HomeTest from "./HomeTest";
 
 const App = () => {
@@ -79,6 +81,11 @@ const App = () => {
             <SignUp />
           </Route>
 
+          <Route path="/test">
+            <TestNav />
+            <TestLogin />
+            <Footer />
+          </Route>
           <Route path="/shop">
             <TestNav />
             {/* <SideNav /> */}
@@ -92,13 +99,18 @@ const App = () => {
             <PrivacyPolicy />
             <Footer />
           </Route>
+          <Route path="/stripe">
+            <TestNav />
+            <Stripe />
+            <Footer />
+          </Route>
 
           <Route path="/products/original">
             <TestNav />
             <ProductBig
               id="#8F26HD7"
               title="Gravity Origin"
-              price={50}
+              price={45}
               // rating={5}
               image="https://images.unsplash.com/photo-1583267926025-393ef3e5f878?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
             />

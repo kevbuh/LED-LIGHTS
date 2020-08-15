@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import "./App.css";
 import Axios from "axios";
-import "./AccountDetails.css";
 
-function AccountDetails() {
+function App() {
   const [registerUsername, setRegisterUsername] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [loginUsername, setLoginUsername] = useState("");
@@ -41,39 +41,40 @@ function AccountDetails() {
     });
   };
   return (
-    <section className="account">
-      <div className="account__details">
-        <span>ACCOUNT DETAILS</span>
+    <div className="App">
+      <div>
+        <h1>Register</h1>
+        <input
+          placeholder="username"
+          onChange={(e) => setRegisterUsername(e.target.value)}
+        />
+        <input
+          placeholder="password"
+          onChange={(e) => setRegisterPassword(e.target.value)}
+        />
+        <button onClick={register}>Submit</button>
       </div>
-      <div className="account__bottom">
-        <div className="account_left">
-          <div className="account__name">
-            <span>
-              Welcome, {data ? <h1>Welcome Back {data.username}</h1> : null}
-            </span>
-          </div>
-          <div className="account__email">
-            <span>kevinbuhler@gmail.com</span>
-          </div>
-          <div className="account__addressTitle">
-            <span> Primary Address</span>
-          </div>
-          <div className="account__email">
-            <span>No addresses currently on file</span>
-            <span>View addresses (0)</span>
-          </div>
-        </div>
-        <div className="account__right">
-          <div className="account__history">
-            <span>Order History</span>
-          </div>
-          <div>
-            <span>You haven't placed any orders yet</span>
-          </div>
-        </div>
+
+      <div>
+        <h1>Login</h1>
+        <input
+          placeholder="username"
+          onChange={(e) => setLoginUsername(e.target.value)}
+        />
+        <input
+          placeholder="password"
+          onChange={(e) => setLoginPassword(e.target.value)}
+        />
+        <button onClick={login}>Submit</button>
       </div>
-    </section>
+
+      <div>
+        <h1>Get User</h1>
+        <button onClick={getUser}>Submit</button>
+        {data ? <h1>Welcome Back {data.username}</h1> : null}
+      </div>
+    </div>
   );
 }
 
-export default AccountDetails;
+export default App;

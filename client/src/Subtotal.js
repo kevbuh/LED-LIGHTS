@@ -3,6 +3,7 @@ import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "./contexts/StateProvider";
 import { getTotal } from "./reducers/reducer";
 import "./Cart.css";
+import { Link } from "react-router-dom";
 
 function Subtotal() {
   const [{ cart }, dispatch] = useStateValue();
@@ -55,8 +56,9 @@ function Subtotal() {
               />
             </span>
           </div>
-
-          <button className="cart__summaryCheckout">Checkout</button>
+          <Link to="/stripe/create-payment-intent">
+            <button className="cart__summaryCheckout">Checkout</button>
+          </Link>
         </div>
       </div>
     </div>
