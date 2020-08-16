@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 600px) {
   .shop__title {
-    font-size: 30px;
+    font-size: 1.7rem;
     font-weight: 700;
     justify-content: center;
     align-items: center;

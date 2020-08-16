@@ -1,0 +1,353 @@
+.productbig {
+  background: #4d4c4c;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.productbig__topImage {
+  background: url("https://images.unsplash.com/photo-1557682268-e3955ed5d83f?ixlib=rb-1.2.1&auto=format&fit=crop&w=843&q=80")
+    top;
+  height: 32vh;
+  background-size: cover;
+}
+
+.productbig__topImageTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 3rem;
+}
+
+.productbig__topImageText {
+  display: flex;
+  justify-content: center;
+  font-size: 5.7rem;
+  margin: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  font-weight: 800;
+}
+.productbig__topImageTextTwo {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.productbig__reasons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f1f1f1;
+  color: #111;
+}
+
+.productbig__reasonsinfo {
+  width: 40vw;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  display: flex;
+  padding: 1rem;
+  color: #111;
+}
+
+.productbig__easy {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.productbig__wifi {
+  display: flex;
+  flex-direction: column;
+  /* background: url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"); */
+  height: 30vh;
+}
+
+.productbig__controller {
+  /* background: url("https://images.unsplash.com/photo-1583267926025-393ef3e5f878?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"); */
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+.productbig__water {
+  /* background: url("https://images.unsplash.com/photo-1492557724230-0399016348c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"); */
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.productbig__color {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+}
+.productbig__cart {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.productbig__Image {
+  height: 30rem;
+  margin: 2rem;
+}
+
+.productbig__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.productbig__right {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 50%;
+}
+
+.productbig__cardInfo {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.productbig__button {
+  background: #338163;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  margin: 1rem 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+.productbig__button:hover {
+  background: #1da571;
+}
+
+.productbig__productInfo {
+  width: 40%;
+}
+
+.tech__title {
+  display: flex;
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: 800;
+}
+
+.tech__list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.05rem;
+  margin: 1rem 0;
+}
+
+.tech__description {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem;
+}
+
+.tech__bigInfoDiv {
+  display: flex;
+  font-size: 1.05rem;
+  width: 70%;
+  padding: 0 0 7rem 2.1rem;
+}
+
+@media screen and (max-width: 860px) {
+  .productbig__topImageText {
+    font-size: 4.7rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .productbig__easy {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productbig__wifi {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  .productbig__controller {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .productbig__water {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productbig__color {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .productbig__cart {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem !important;
+  }
+
+  .productbig__Image {
+    height: 22rem;
+    margin: 2rem;
+  }
+
+  .productbig__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .productbig__right {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 50%;
+  }
+
+  .productbig__cardInfo {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+  }
+
+  .productbig__button {
+    background: #14885c;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    margin: 1rem 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .productbig__button:hover {
+    background: #1da571;
+  }
+
+  .productbig__productInfo {
+    width: 81%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tech__bigInfoDiv {
+    display: flex;
+    font-size: 1.05rem;
+    width: 85%;
+  }
+  .productbig__topImage {
+    height: 40vh;
+  }
+
+  .productbig__topImageTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 3rem;
+  }
+
+  .productbig__topImageText {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+
+  .title {
+    font-size: 1.7rem;
+    margin: 1rem;
+    font-weight: 800;
+  }
+  .productbig__topImageTextTwo {
+    font-size: 1.6rem;
+    margin: 1rem;
+    font-weight: 300;
+  }
+
+  .productbig__reasonsinfo {
+    width: 80vw;
+    font-size: 1.1rem;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+
+  .productbig__easy {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productbig__wifi {
+    display: flex;
+    flex-direction: column;
+    /* background: url("https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"); */
+    height: 30vh;
+  }
+
+  .productbig__controller {
+    /* background: url("https://images.unsplash.com/photo-1583267926025-393ef3e5f878?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"); */
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .productbig__water {
+    /* background: url("https://images.unsplash.com/photo-1492557724230-0399016348c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"); */
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productbig__color {
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .productbig__cart {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productbig__Image {
+    height: 30rem;
+    margin: 1 2rem 0 2rem;
+  }
+
+  .productbig__right {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .productbig__cardInfo {
+    font-size: 2.7rem;
+    padding-top: 0;
+  }
+
+  .productbig__button {
+    width: 100%;
+  }
+
+  .productbig__productInfo {
+    width: 70%;
+  }
+}

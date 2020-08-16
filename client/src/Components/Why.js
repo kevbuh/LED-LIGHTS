@@ -55,11 +55,21 @@ function Why() {
             </div>
           </div>
         </li>
+        <li>
+          <div className="info__reason">
+            <div className="info__reasonLeft">
+              <span>16 Million Color Combinations</span>
+            </div>
+            <div className="info__reasonRight">
+              <FormatColorResetIcon className="info__icon" />
+            </div>
+          </div>
+        </li>
 
         <li>
           <div className="info__reason">
             <div className="info__reasonLeft">
-              <span>Tons of patterns</span>
+              <span>Custom patterns</span>
             </div>
             <div className="info__reasonRight">
               <CheckIcon className="info__icon" />

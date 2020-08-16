@@ -45,7 +45,7 @@ const App = () => {
             <ProductBig
               id="#8F26HD7"
               title="Gravity Origin"
-              price={45}
+              price={60}
               image="https://images.unsplash.com/photo-1583267926025-393ef3e5f878?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
             />
             <Footer />

@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import "../css/Login.css";
 import { Link } from "react-router-dom";
 import Axios from "axios";
-// import SimpleAlerts from './MAlerts'
-// import FormAlerts from './FormAlerts'
-// import TransitionAlerts from './MAlerts'
 
 function Login() {
   const [registerUsername, setRegisterUsername] = useState("");

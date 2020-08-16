@@ -1,6 +1,6 @@
 import React from "react";
 import { useStateValue } from "../contexts/StateProvider";
-import "../css/ProductBig.css";
+import "../css/ProductInfo.css";
 import Info from "../Components/Why";
 
 function ProductBig({ id, title, price, image }) {
@@ -97,7 +97,7 @@ function ProductBig({ id, title, price, image }) {
             <small>$</small>
             <strong>{price}</strong>
           </p>
-          <div>
+          <div className="productbig__productInfo">
             The perfect LED lights for any occasion. Over 100 custom design
             patterns. Wireless connection to control lights through custom phone
             software. The best led strip out there. Easy to install. Best in
@@ -116,6 +116,61 @@ function ProductBig({ id, title, price, image }) {
           <button className="productbig__button" onClick={addToCart}>
             Add to Cart
           </button>
+        </div>
+      </div>
+      <div className="tech">
+        <div className="tech__title">Technical Info</div>
+        <div>
+          <ul className="tech__list">
+            <span>60 LEDS Per Meter</span>
+            <span>300 leds per strip</span>
+            <span>Bright</span>
+            <span>Long Lasting</span>
+            <span>Low Power Consumption</span>
+            <span>Excellent luminous efficiency</span>
+            <span>
+              Self Adhesive tape on the back makes it easy to install.
+            </span>
+            <span>Removable IP65 weatherproof covering</span>
+            <span>5M or 16.4 feet per strip</span>
+            <span>Uses WLED software</span>
+            <span>Over 100 different patterns</span>
+            <span>16 Million different colors</span>
+            <span>5 Volts</span>
+            <span>Lifespan of over 40000 hours</span>
+            <span>RGBW, an upgrade for an addition of white light.</span>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div className="tech__description">Description</div>
+        <div className="tech__bigInfoDiv">
+          <span className="tech__bigInfo">
+            These LED strips are special. With the water proof capabilities,
+            these can be used for any situation. Feel free to set them up
+            outside, or inside of your own room. Get creative with it! Uses high
+            quality LED light strips made specifically for extended use with
+            bright colors. We have engineered some of the best patterns and
+            color accuracy with these lights. There are 60 LEDS per meter, each
+            are fully addressable. Feel free to upload your own special code or
+            submit a pull request on our github page. With the WLED software,
+            there is no need for any clunky remote. These strips come in a size
+            of 5M. In addition, there is a custom made, tried and true
+            microcontroller designed especially for RGB LED lights. Don't worry,
+            we address all of these engineering solutions in house in order to
+            make your customer experience great. Simply download the WLED
+            software onto any modern device with wifi capabilities, and plug
+            into your nearest wall outlet! The Gravity Origin strip is made with
+            a special PCB material, meant for twisting and curves in the LED
+            strip. Fully RGBW, there are more than 16 Million color combinations
+            with this strip. Standing for Red, Greend, Blue, White, this strip
+            is an upgraded version to your typically LED strip. It also comes
+            with quality adhesive tape to make sure the strip will stay onto
+            most surfaces. This strip itself is flat and ideal for an easy stick
+            on to most surfaces. One tip, make sure you know exactly where you
+            want the strip to go. If you don't, then the LED strip's adhesive
+            tape will be compromised and warranty will be voided.{" "}
+          </span>
         </div>
       </div>
     </div>

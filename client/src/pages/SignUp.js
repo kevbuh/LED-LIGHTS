@@ -44,15 +44,9 @@ function SignUp() {
   return (
     <section className="login">
       <div className="login__form">
-        {/* <div className="logo__code">
-        <a href="/"><img src="images/findnue-text.png" alt="." /></a>
-      </div> */}
-
         <Link to="/">
           <h6>Gravity LEDS</h6>
         </Link>
-
-        {/* <TransitionAlerts text={"Hello"} /> */}
         <form>
           <div className="login__textbox">
             <input
@@ -87,14 +81,6 @@ function SignUp() {
             Sign Up
           </button>
 
-          {/* <div className="login__section">
-          <div className="login__or">
-            <p>or</p>
-          </div>
-          <a href="/auth/google" className="login__google-button">
-            <i className="fab fa-google left"></i> Log In with google
-          </a>
-        </div> */}
           <div className="login__privacy-link">
             <a href="/privacy">Privacy Policy</a>
           </div>

@@ -29,7 +29,7 @@ function Products() {
                 "https://i.pinimg.com/564x/d9/52/01/d95201cbe3f33bfc70ff0166d4e34f8c.jpg"
               }
               title={"Gravity Origin: Custom"}
-              price={"45"}
+              price={60}
               info={
                 "The perfect LED lights for any occasion. Over 100 custom design patterns. Wireless connection to control lights through custom phone software. "
               }
@@ -48,7 +48,7 @@ function Products() {
             <Product
               id="#8F26HD7"
               title="Gravity Origin: Custom"
-              price={45}
+              price={60}
               // rating={5}
               image="https://i.pinimg.com/564x/d9/52/01/d95201cbe3f33bfc70ff0166d4e34f8c.jpg"
             />

@@ -14,6 +14,7 @@
   color: #111;
   font-size: 1rem;
   font-weight: 400;
+  margin: 0 1rem;
 }
 
 .footer__link {
@@ -70,11 +71,28 @@
   align-items: center;
 }
 
+.footer__twoBlocks {
+  display: flex;
+}
+
+.footer__policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__policy h6 {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  margin: 0.1rem;
+}
+
 @media screen and (max-width: 600px) {
   .footer {
     flex-direction: column;
     padding: 1rem 0;
-    height: 85vw;
+    height: 100vw;
     padding: 2rem;
     vertical-align: top;
   }
@@ -90,14 +108,14 @@
 
   .footer__link {
     color: #111;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 500;
   }
 
   .footer__quickLinks {
     color: #111;
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
   }
 

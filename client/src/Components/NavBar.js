@@ -44,19 +44,23 @@ function NavBar() {
           <button onClick={closeMenu} className="nav__buttonClose">
             X
           </button>
-          <Link to="/shop" className="nav__sidebarLink">
+          <Link to="/shop" onClick={closeMenu} className="nav__sidebarLink">
             <span>Shop</span>
           </Link>
-          <Link to="/faqs" className="nav__sidebarLink">
+          <Link to="/faqs" onClick={closeMenu} className="nav__sidebarLink">
             <span>FAQS</span>
           </Link>
-          <Link to="/contact" className="nav__sidebarLink">
+          <Link to="/contact" onClick={closeMenu} className="nav__sidebarLink">
             <span>Contact</span>
           </Link>
-          <Link to="/checkout" className="nav__sidebarLink">
+          <Link to="/checkout" onClick={closeMenu} className="nav__sidebarLink">
             <span>Cart: {cart?.length}</span>
           </Link>
-          <Link to="/users/login" className="nav__sidebarLink">
+          <Link
+            to="/users/login"
+            onClick={closeMenu}
+            className="nav__sidebarLink"
+          >
             <span>Login</span>
           </Link>
         </div>
