@@ -1,0 +1,296 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none !important;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav__logo {
+  font-size: 1.6rem;
+  text-decoration: none !important;
+  color: #111111;
+}
+
+.nav__logoText {
+  color: #111111;
+  font-weight: 500;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link {
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  font-weight: 600;
+  color: #111111;
+  transition: 0.2s linear;
+}
+.nav__link:hover {
+  text-shadow: 1px 1px 9px #c5c2c2;
+}
+
+.nav__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__searchInput {
+  height: 20px;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  background-color: #f1f1f1;
+  outline: none;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 5px;
+  position: relative;
+  right: 10px;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.nav__searchInput::placeholder {
+  color: #111111;
+  font-size: 1.2rem;
+  font-weight: 490;
+}
+
+.nav__search {
+  display: flex;
+  flex: 0.9;
+  font-size: 1.52rem;
+}
+
+.nav__searchIcon {
+  background-color: #f1f1f1;
+  padding: 0.8rem;
+  height: 1rem;
+  margin-left: 19px;
+  margin: 1rem 0;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+.nav__shoppingBasketIcon {
+  margin-right: 1.5rem;
+  color: #111111 !important;
+}
+
+.nav__accountBoxIcon {
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+  color: #111111 !important;
+}
+
+.nav__iconsSide {
+  display: none;
+  outline: none;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.open {
+  display: flex;
+  position: absolute;
+  background: #111111;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  width: 40%;
+  padding: 15px 0;
+  transition: 0.3s linear;
+  color: #ffffff;
+}
+
+.nav__sideNav {
+  display: flex;
+}
+.closed {
+  transform: translateX(-100%);
+}
+
+.nav__cartLength {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 900;
+  padding-left: 0.5rem;
+}
+
+.nav__button {
+  cursor: pointer;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  display: none;
+}
+.nav__buttonClose {
+  margin-left: 8rem;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.nav__sidebar {
+  position: fixed;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  width: 14rem;
+  background: #111111;
+  color: #ffffff;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  transform: translateX(20rem);
+}
+
+.nav__sidebar.open {
+  transform: translateX(0);
+}
+
+.nav__sidebarLinks {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.6rem;
+}
+
+.nav__sidebarLink {
+  list-style-type: none;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 700px) {
+  .nav__logo {
+    font-size: 1.1rem;
+  }
+
+  .nav__logoText {
+    font-weight: 600;
+  }
+
+  .nav_search {
+    font-size: 0.5rem !important;
+  }
+
+  .nav__link {
+    margin-right: 0.8rem;
+    font-weight: 600;
+  }
+
+  .nav__searchInput {
+    height: 21px;
+    padding: 10px;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 5px;
+    right: 10px;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+  .nav__searchInput::placeholder {
+    font-size: 1rem;
+    font-weight: 490;
+  }
+
+  .nav__searchIcon {
+    height: 0.8rem;
+    margin-left: 10px;
+    margin: 1rem 0;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 8.5px;
+  }
+
+  .nav__shoppingBasketIcon {
+    margin-right: 1.5rem;
+  }
+
+  .nav__accountBoxIcon {
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .nav__cartLength {
+    font-size: 1rem;
+    font-weight: 900;
+    padding-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hide {
+    display: none;
+  }
+  .nav__button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nav__logo {
+    font-size: 0.1rem;
+  }
+
+  .nav__logoText {
+    font-weight: 600;
+  }
+
+  .nav__link {
+    margin-right: 0.8rem;
+    font-weight: 600;
+  }
+
+  .nav__searchInput {
+    height: 21px;
+    padding: 10px;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 5px;
+    right: 10px;
+    font-size: 0.9rem;
+    font-weight: 900;
+  }
+  .nav__searchInput::placeholder {
+    font-size: 1rem;
+    font-weight: 490;
+  }
+
+  .nav__searchIcon {
+    height: 0.8rem;
+    margin-left: 10px;
+    margin: 1rem 0;
+    border-radius: 5px;
+    font-weight: 900;
+  }
+
+  .nav__shoppingBasketIcon {
+    margin-right: 1.5rem;
+  }
+
+  .nav__accountBoxIcon {
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .nav__cartLength {
+    font-size: 1rem;
+    font-weight: 900;
+    padding-left: 0.5rem;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Info.css";
+import "../css/Why.css";
 import CheckIcon from "@material-ui/icons/Check";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import WifiIcon from "@material-ui/icons/Wifi";

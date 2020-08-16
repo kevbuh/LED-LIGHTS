@@ -59,3 +59,67 @@
   font: 0.7rem !important;
   color: #111;
 }
+
+@media screen and (max-width: 600px) {
+  .contact {
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .contact__contactTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  .contact__info {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__emailInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__container {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 13px;
+  }
+
+  .contact__or {
+    margin: 1rem;
+  }
+
+  .contact__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact__button {
+    padding: 3rem !important;
+    font-size: 50px !important;
+  }
+
+  .contact__title {
+    font-size: 3rem;
+    border-bottom: 2px solid #111;
+    padding: 1rem;
+    font-weight: 300;
+    margin-bottom: 8rem;
+  }
+
+  .contact__privacy {
+    font: 0.7rem !important;
+    color: #111;
+  }
+}

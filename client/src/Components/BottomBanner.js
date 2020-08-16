@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/BottomSection.css";
+import "../css/BottomBanner.css";
 import { Link } from "react-router-dom";
 
 function BottomSection() {

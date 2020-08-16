@@ -4,7 +4,7 @@ import "../css/Cart.css";
 import ClearIcon from "@material-ui/icons/Clear";
 
 function CheckoutProduct({ id, title, price, image }) {
-  const [dispatch] = useStateValue();
+  const [{ cart }, dispatch] = useStateValue();
 
   const RemoveFromCart = () => {
     dispatch({

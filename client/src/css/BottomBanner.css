@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  background: url('https://images.unsplash.com/photo-1557940724-c4b619c71af8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80') no-repeat center;
+  background: url("https://images.unsplash.com/photo-1557940724-c4b619c71af8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80")
+    no-repeat center;
   background-size: cover;
   height: 50vh;
 }
@@ -23,4 +24,16 @@
 .bottomsection__text:hover {
   color: #111111;
   background: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  .bottomsection {
+    height: 35vh;
+  }
+
+  .bottomsection__text {
+    font-weight: 900;
+    font-size: 1.8rem;
+    padding: 1rem 1rem;
+  }
 }

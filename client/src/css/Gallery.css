@@ -10,6 +10,7 @@
   flex-direction: column;
   background-color: #000000;
   padding: 6rem 4rem 6rem 0;
+  width: 100%;
 }
 
 .featured__title {
@@ -34,4 +35,28 @@
 .featured__pic img:hover {
   opacity: 1;
   transition: 0.5s linear;
+}
+
+@media screen and (max-width: 600px) {
+  .featured__all {
+    padding: 0;
+  }
+
+  .featured__all img {
+    height: 35vh;
+    margin: 1rem;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .featured__title {
+    font-size: 3.5rem;
+  }
+
+  .featured__pics {
+    flex-wrap: wrap;
+  }
+  .featured__pic img {
+    width: 50vw;
+  }
 }

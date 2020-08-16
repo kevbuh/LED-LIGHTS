@@ -4,7 +4,8 @@
   justify-content: center;
   align-content: center;
   height: 70vh;
-  background: url('https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80') no-repeat bottom;
+  background: url("https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80")
+    no-repeat bottom;
   background-size: cover;
 }
 
@@ -41,7 +42,7 @@
 
 .homescreen__logo {
   font-size: 4rem;
-  padding: 1.5rem 3rem ;
+  padding: 1.5rem 3rem;
   border-radius: 5px;
   color: #ffffff;
 }
@@ -49,4 +50,50 @@
 .homescreen__buttonField:hover {
   background: #ffffff;
   color: #111111;
+}
+@media screen and (max-width: 780px) {
+  .homescreen__logo {
+    font-size: 3.6rem;
+  }
+  .homescreen__logoInfo {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 710px) {
+  .homescreen__logo {
+    font-size: 3rem;
+  }
+  .homescreen__logoInfo {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  .homescreen__logo {
+    font-size: 2.7rem;
+  }
+  .homescreen__logoInfo {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  .homescreen__logo {
+    font-size: 2.4rem;
+  }
+  .homescreen__logoInfo {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homescreen {
+    height: 60vh;
+  }
+
+  .homescreen__logoInfo {
+    font-size: 1.35rem;
+  }
+
+  .homescreen__logo {
+    font-size: 1.72rem;
+  }
 }

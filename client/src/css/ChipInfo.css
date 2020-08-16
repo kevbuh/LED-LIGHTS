@@ -29,3 +29,29 @@
   align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .originalproduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    color: #000000;
+  }
+
+  .originalproduct__left {
+    display: flex;
+    float: right;
+    position: 1;
+  }
+
+  .originalproduct__right {
+    position: 0;
+    display: flex;
+    float: left;
+  }
+
+  .originalproduct__img {
+    width: 100%;
+    height: 100%;
+  }
+}

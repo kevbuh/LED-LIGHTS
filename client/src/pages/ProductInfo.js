@@ -4,7 +4,7 @@ import "../css/ProductBig.css";
 import Info from "../Components/Why";
 
 function ProductBig({ id, title, price, image }) {
-  const [dispatch] = useStateValue();
+  const [{ cart }, dispatch] = useStateValue();
 
   const addToCart = () => {
     dispatch({

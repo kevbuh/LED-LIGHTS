@@ -1,7 +1,7 @@
 import React from "react";
-import "../css/OriginalProduct.css";
+import "../css/ChipInfo.css";
 
-function ChipInfo({}) {
+function ChipInfo() {
   return (
     <section className="originalproduct">
       <div className="originalproduct__left">

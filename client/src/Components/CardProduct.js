@@ -4,7 +4,7 @@ import "../css/ProductCard.css";
 import { Link } from "react-router-dom";
 
 function Product({ id, title, price, image }) {
-  const [dispatch] = useStateValue();
+  const [{ cart }, dispatch] = useStateValue();
 
   const addToCart = () => {
     dispatch({

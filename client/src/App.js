@@ -80,7 +80,6 @@ const App = () => {
           <Route path="/faqs">
             <NavBar />
             <Faqs />
-            <h1>faqs</h1>
             <Footer />
           </Route>
 

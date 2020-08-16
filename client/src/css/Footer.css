@@ -69,3 +69,77 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    padding: 1rem 0;
+    height: 85vw;
+    padding: 2rem;
+    vertical-align: top;
+  }
+
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #111;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .footer__link {
+    color: #111;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .footer__quickLinks {
+    color: #111;
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer__companyName {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 1rem;
+  }
+
+  .footer__policy {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .footer__copyrightIcon {
+    font-size: 20px !important;
+  }
+
+  .footer__mediaIcon {
+    margin: 1rem !important;
+  }
+
+  .footer__media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__mediaInfo {
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .footer__companyArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__privacy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
