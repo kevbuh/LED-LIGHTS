@@ -10,9 +10,11 @@ function PrivacyPolicy() {
       </div>
       <div className="contact__contactTitle">Privacy Policy</div>
       <div className="contact__container">
-        <div className="contact__info">
-          <div>At Gravity LEDs, we will never sell your information.</div>
-          <div className="contact__or">&</div>
+        <div className="contact__infoPrivacy">
+          <div className="contact__infoPrivacyTitle">
+            At Gravity LEDs, we will never sell your information.
+          </div>
+
           <div className="contact__privacy">
             <span>
               This includes any other personal and non-public information with

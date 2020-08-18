@@ -19,6 +19,7 @@ import Faqs from "./pages/Faqs";
 import React, { useEffect } from "react";
 import "./css/App.css";
 import { useStateValue } from "./contexts/StateProvider";
+import Success from "./pages/Success";
 
 const App = () => {
   // const [{ cart }, dispatch] = useStateValue();
@@ -32,6 +33,9 @@ const App = () => {
   //     setData(JSON.parse(JSON.stringify("cart")));
   //   }
   // });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Router>
@@ -39,13 +43,31 @@ const App = () => {
         <Switch>
           <Route path="/users/register">
             <SignUp />
+            <Footer />
           </Route>
 
           <Route path="/payment-success">
             <NavBar />
-            <div>Success!</div>
+            <Success />
             <Footer />
           </Route>
+
+          <Route path="/terms">
+            <NavBar />
+            <div>Terms & Conditions</div>
+            <Footer />
+          </Route>
+          <Route path="/returns">
+            <NavBar />
+            <div>Terms & Conditions</div>
+            <Footer />
+          </Route>
+          <Route path="/shipping">
+            <NavBar />
+            <div>Shipping</div>
+            <Footer />
+          </Route>
+
           <Route path="/payment-canceled">
             <NavBar />
             <div>Canceled.</div>
@@ -69,7 +91,7 @@ const App = () => {
             <ProductBig
               id="#8F26HD7"
               title="Gravity Origin"
-              price={60}
+              price={59.99}
               image="https://images.unsplash.com/photo-1583267926025-393ef3e5f878?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
             />
             <Footer />
@@ -83,6 +105,7 @@ const App = () => {
 
           <Route path="/users/login">
             <Login />
+            <Footer />
           </Route>
 
           <Route path="/about">

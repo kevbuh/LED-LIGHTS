@@ -26,7 +26,7 @@ function Product({ id, title, price, image }) {
           <img className="productcard__cardImage" src={image} alt="" />
           <p className="productcard__cardInfo">{title}</p>
           <p className="productcard__cardInfo">
-            <small>$</small>
+            <strong>$</strong>
             <strong>{price}</strong>
           </p>
         </div>

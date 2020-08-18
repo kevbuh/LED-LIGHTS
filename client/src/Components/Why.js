@@ -27,7 +27,7 @@ function Why() {
             <li>
               <div className="info__reason">
                 <div className="info__reasonLeft">
-                  <span>WiFi Enabled</span>
+                  <span>WiFi enabled</span>
                 </div>
               </div>
             </li>
@@ -35,7 +35,7 @@ function Why() {
             <li>
               <div className="info__reason">
                 <div className="info__reasonLeft">
-                  <span>No Controller</span>
+                  <span>No controller</span>
                 </div>
               </div>
             </li>
@@ -49,7 +49,7 @@ function Why() {
             <li>
               <div className="info__reason">
                 <div className="info__reasonLeft">
-                  <span>16 Million+ Colors</span>
+                  <span>16 million colors</span>
                 </div>
               </div>
             </li>

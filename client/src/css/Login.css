@@ -1,6 +1,7 @@
 .login {
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -172,6 +173,8 @@
 }
 
 .login__dont-have-account {
+  display: flex;
+  justify-content: space-between;
   font-size: 0.9rem;
   text-align: center;
   color: #00000080;
@@ -190,4 +193,27 @@
   font-weight: 600;
   padding-bottom: 1rem;
   border-bottom: 1px solid #111111;
+}
+
+.login__divCreate {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.login__buttonRegister {
+  margin: 2.54rem 0rem;
+  padding: 0.73rem;
+  width: 100%;
+  font-size: 0.9rem;
+  outline: none;
+  border: 1px solid #111;
+}
+
+.login__buttonRegister:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border-color: #fff;
+  transition: 0.2s linear;
 }

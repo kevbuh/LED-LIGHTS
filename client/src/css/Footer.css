@@ -3,9 +3,13 @@
   justify-content: space-evenly;
   background-color: #ffffff;
   padding: 1rem 0;
-  height: 12vw;
   padding: 2rem;
   vertical-align: top;
+  flex-wrap: wrap;
+}
+
+.width {
+  width: 20%;
 }
 
 .footer__links {
@@ -88,7 +92,7 @@
   margin: 0.1rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .footer {
     flex-direction: column;
     padding: 1rem 0;

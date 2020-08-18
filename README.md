@@ -2,6 +2,18 @@
 
 ### Todo
 
+- [] Gallery
+  - [] Carousel
+  - [] Pictures of product
+  - [] Allow people to submit the Pictures
+  - [] Include videos
+- [] Set Up
+  - [] Show how to set up led LIGHTS
+    - [] PDF or instruction manual
+    - [] Step by step instuctions
+    - [] Video instructions
+  - [] Link to all of the color combinations
+  - [] Still need help? Email us.
 - [] Footer
   - [] Make sure is responsive
   - [] Returns

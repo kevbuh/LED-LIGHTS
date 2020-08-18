@@ -6,13 +6,6 @@
   margin: 1rem 0;
 }
 
-.contact__contactTitle {
-  font-size: 3rem;
-  font-weight: 600;
-  margin: 2rem;
-  padding: 1rem;
-}
-
 .contact__info {
   font-size: 1.3rem;
   display: flex;
@@ -22,7 +15,6 @@
 
 .contact__emailInfo {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -47,8 +39,8 @@
   font-size: 50px !important;
 }
 
-.contact__title {
-  font-size: 5rem;
+.contact__contactTitle {
+  font-size: 4rem;
   border-bottom: 2px solid #111;
   padding: 1rem;
   font-weight: 300;
@@ -58,6 +50,21 @@
 .contact__privacy {
   font: 0.7rem !important;
   color: #111;
+  width: 70%;
+  margin: 1rem 0;
+}
+
+.contact__infoPrivacy {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__infoPrivacyTitle {
+  font-size: 1.35rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #111;
 }
 
 @media screen and (max-width: 600px) {

@@ -349,4 +349,44 @@
   .productbig__productInfo {
     width: 70%;
   }
+
+  .tech__list {
+    display: flex;
+    justify-content: center;
+    margin: 0rem;
+    width: 80%;
+  }
+
+  .tech__title {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0rem;
+  }
+
+  .tech__description {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+  }
+
+  .tech__bigInfo {
+    display: flex;
+    justify-content: center;
+    margin: 0rem;
+  }
+
+  .tech__description {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1rem 4rem;
+  }
+
+  .tech__bigInfoDiv {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 2.6rem;
+    font-size: 1.05rem;
+    width: 80%;
+    padding: 0 0 7rem 0rem;
+  }
 }

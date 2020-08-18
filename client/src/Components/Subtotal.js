@@ -91,23 +91,24 @@ function Subtotal() {
             <span>Shipping:</span>
             <span>FREE</span>
           </div>
-          <div className="cart__summaryPriceSub">
-            <span>Tax:</span>
-            <span>$0.00</span>
-          </div>
         </div>
         <div className="cart__summaryTotal">
           <div className="cart__summaryPriceSub">
-            <span>Estimated total:</span>
-            <span>
-              <CurrencyFormat
-                decimalScale={2}
-                value={getTotal(cart)}
-                displayType={"text"}
-                thousandSeparator={true}
-                prefix={"$"}
-              />
-            </span>
+            <span>Estimated total: </span>
+            <div>
+              <span>
+                <strong>
+                  <CurrencyFormat
+                    decimalScale={2}
+                    value={getTotal(cart)}
+                    displayType={"text"}
+                    thousandSeparator={true}
+                    prefix={"$"}
+                  />
+                </strong>
+              </span>
+              <span> + Tax</span>
+            </div>
           </div>
           <button
             role="link"

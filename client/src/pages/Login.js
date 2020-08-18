@@ -29,52 +29,52 @@ function Login() {
   return (
     <section className="login">
       <div className="login__form">
+        <div>
+          <h6>Login</h6>
+        </div>
         {/* <div className="logo__code">
         <a href="/"><img src="images/findnue-text.png" alt="." /></a>
       </div> */}
 
-        <Link to="/">
-          <h6>Gravity LEDs</h6>
-        </Link>
-
         {/* <TransitionAlerts text={"Hello"} /> */}
-        <form>
-          <div className="login__textbox">
-            <input
-              onChange={(e) => setLoginUsername(e.target.value)}
-              type="text"
-              required
-              placeholder="Username"
-            />
-            <span className="login__check-message hidden">Required</span>
-          </div>
-          <div className="login__textbox">
-            <input
-              onChange={(e) => setLoginPassword(e.target.value)}
-              type="password"
-              required
-              placeholder="Password"
-            />
-            <span className="login__check-message hidden">Required</span>
-          </div>
+        <div className="login__left">
+          <form>
+            <div className="login__textbox">
+              <input
+                onChange={(e) => setLoginUsername(e.target.value)}
+                type="text"
+                required
+                placeholder="Username"
+              />
+              <span className="login__check-message hidden">Required</span>
+            </div>
+            <div className="login__textbox">
+              <input
+                onChange={(e) => setLoginPassword(e.target.value)}
+                type="password"
+                required
+                placeholder="Password"
+              />
+              <span className="login__check-message hidden">Required</span>
+            </div>
 
-          <div className="login__options">
-            <label className="login__remember-me">
-              <span className="login__checkbox">
-                <input type="checkbox" />
-                <span className="login__checked"></span>
-              </span>
-              Remember me
-            </label>
+            <div className="login__options">
+              {/* <label className="login__remember-me">
+                <span className="login__checkbox">
+                  <input type="checkbox" />
+                  <span className="login__checked"></span>
+                </span>
+                Remember me
+              </label> */}
 
-            <a href="/">Forgot Password?</a>
-          </div>
+              {/* <a href="/">Forgot Password?</a> */}
+            </div>
 
-          <button type="button" onClick={login} className="login__login-btn">
-            Log In Now
-          </button>
+            <button type="button" onClick={login} className="login__login-btn">
+              Log In Now
+            </button>
 
-          {/* <div className="login__section">
+            {/* <div className="login__section">
           <div className="login__or">
             <p>or</p>
           </div>
@@ -82,15 +82,18 @@ function Login() {
             <i className="fab fa-google left"></i> Log In with google
           </a>
         </div> */}
-          <div className="login__privacy-link">
-            <a href="/privacy">Privacy Policy</a>
-          </div>
-        </form>
-
-        <div className="login__dont-have-account">
-          Don't Have an account?
-          <a href="/users/register">Sign Up</a>
+          </form>
         </div>
+      </div>
+      <div className="login__form">
+        <div>
+          <h6>No Account?</h6>
+        </div>
+        <Link to="/users/register">
+          <div className="login__divCreate">
+            <button className="login__buttonRegister">Create Account</button>
+          </div>
+        </Link>
       </div>
     </section>
   );

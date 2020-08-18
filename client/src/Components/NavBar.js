@@ -83,7 +83,10 @@ function NavBar() {
               onClick={closeMenu}
               className="nav__sidebarLink"
             >
-              <span>{data.username}</span>
+              <span className="nav__mobileLogos">
+                <AccountBoxIcon className="nav__accountMobile" />
+                {data.username}
+              </span>
             </Link>
           ) : (
             <Link
@@ -139,7 +142,12 @@ function NavBar() {
           {data ? (
             <Link to="/account">
               <div className="nav__accountBoxIcon big">
-                <AccountBoxIcon />
+                <div className="nav__accountBoxDiv">
+                  <AccountBoxIcon />
+                  <div className="nav__dataWords">
+                    <span> {data.username}</span>
+                  </div>
+                </div>
               </div>
             </Link>
           ) : (

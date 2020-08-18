@@ -64,7 +64,7 @@ function SignUp() {
     <section className="login">
       <div className="login__form">
         <Link to="/">
-          <h6>Gravity LEDS</h6>
+          <h6>Register </h6>
         </Link>
         <form>
           <div className="login__textbox">
@@ -95,7 +95,7 @@ function SignUp() {
             <span className="login__check-message hidden">Required</span>
           </div>
 
-          <div className="login__options">
+          {/* <div className="login__options">
             <label className="login__remember-me">
               <span className="login__checkbox">
                 <input type="checkbox" />
@@ -105,20 +105,20 @@ function SignUp() {
             </label>
 
             <a href="/">Forgot Password?</a>
-          </div>
+          </div> */}
 
           <button onClick={register} className="login__login-btn">
             Sign Up
           </button>
 
-          <div className="login__privacy-link">
+          {/* <div className="login__privacy-link">
             <a href="/privacy">Privacy Policy</a>
-          </div>
+          </div> */}
         </form>
 
         <div className="login__dont-have-account">
           Already have an account?
-          <a href="/users/login">Sign In</a>
+          <a href="/users/login"> Sign In</a>
         </div>
       </div>
     </section>

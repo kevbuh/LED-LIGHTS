@@ -154,25 +154,25 @@ function ProductBig({ id, title, price, image }) {
             inside of your own room. Get creative with it! Uses high-quality LED
             light strips made specifically for extended use with bright colors.
             We have engineered some of the best patterns and color accuracy with
-            these lights. There are 60 LEDS per meter, each are fully
-            addressable. Feel free to upload your own special code or submit a
-            pull request on our github page. With the WLED software, there is no
-            need for any clunky remote. These strips come in a size of 5M. In
-            addition, there is a custom made, tried and true microcontroller
-            designed especially for RGB LED lights. Don't worry, we address all
-            of these engineering solutions in house in order to make your
-            customer experience great. Simply download the WLED software onto
-            any modern device with WiFi capabilities, and plug into your nearest
-            wall outlet! The Gravity Origin strip is made with a special PCB
-            material, meant for twisting and curves in the LED strip. Fully
-            RGBW, there are more than 16 Million color combinations with this
-            strip. Standing for Red, Green, Blue, White, this strip is an
-            upgraded version to your typically LED strip. It also comes with
-            quality adhesive tape to make sure the strip will stay onto most
-            surfaces. This strip itself is flat and ideal for an easy stick on
-            to most surfaces. One tip, make sure you know exactly where you want
-            the strip to go. If you don't, then the LED strip's adhesive tape
-            will be compromised and warranty will be voided.{" "}
+            these lights. There are 60 fully functioning LEDS per meter. Feel
+            free to upload your own special code or submit a pull request on our
+            github page. With the WLED software, there is no need for any clunky
+            remote. These strips come in a size of 5M. In addition, there is a
+            custom made, tried and true microcontroller designed especially for
+            RGB LED lights. Don't worry, we address all of these engineering
+            solutions in house in order to make your customer experience great.
+            Simply download the WLED software onto any modern device with WiFi
+            capabilities, and plug into your nearest wall outlet! The Gravity
+            Origin strip is made with a special PCB material, meant for twisting
+            and curves in the LED strip. Fully RGBW, there are more than 16
+            Million color combinations with this strip. Standing for Red, Green,
+            Blue, White, this strip is an upgraded version to your typically LED
+            strip. It also comes with quality adhesive tape to make sure the
+            strip will stay onto most surfaces. This strip itself is flat and
+            ideal for an easy stick on to most surfaces. One tip, make sure you
+            know exactly where you want the strip to go. If you don't, then the
+            LED strip's adhesive tape will be compromised and warranty will be
+            voided.{" "}
           </span>
         </div>
       </div>

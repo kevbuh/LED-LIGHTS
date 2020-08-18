@@ -18,7 +18,6 @@
 
 .info__reason {
   display: flex;
-  justify-content: space-evenly;
   padding: 1rem;
 }
 
@@ -28,17 +27,13 @@
   margin: 1.3rem 0;
 }
 
-.info__reasonRight {
+.info__divLeft {
+  display: flex;
 }
 
 .info__icon {
   font-size: 2rem !important;
   margin: 2.3rem 0;
-}
-
-.info__divLeft {
-}
-.info__divRight {
 }
 
 .info__divMain {
@@ -51,6 +46,10 @@
     margin: 0 0 2rem 0;
   }
 
+  .info__divMain {
+    display: flex;
+  }
+
   .info__title {
     font-size: 2rem;
     font-weight: 700;
@@ -60,8 +59,8 @@
 
   .info__reason {
     display: flex;
-    justify-content: space-evenly;
-    padding: 0.5rem;
+    justify-content: space-around;
+    padding: 0.5rem 0rem;
   }
 
   .info__reasonLeft {
@@ -71,5 +70,6 @@
 
   .info__icon {
     font-size: 2rem !important;
+    margin: 1.55rem 0;
   }
 }

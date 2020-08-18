@@ -79,7 +79,7 @@
 }
 
 .nav__shoppingBasketIcon {
-  margin-right: 1.5rem;
+  margin-right: 0.5rem;
   color: #111111 !important;
 }
 
@@ -176,7 +176,28 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 700px) {
+.nav__dataWords {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  padding-left: 0.1rem;
+}
+
+.nav__accountBoxDiv {
+  display: flex;
+  align-items: center;
+}
+
+.nav__accountMobile {
+  font-size: 2rem !important;
+}
+
+.nav__mobileLogos {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 740px) {
   .nav__logo {
     font-size: 1.1rem;
   }

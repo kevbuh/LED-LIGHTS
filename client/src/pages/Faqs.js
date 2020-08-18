@@ -7,7 +7,7 @@ function Faqs() {
       <div className="faqs__title">FAQS</div>
       <div className="faqs__questions">
         <div className="faqs__question">
-          <span className="faqs__questionTitle">How to Sync</span>
+          <span className="faqs__questionTitle">How to Sync?</span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -15,7 +15,7 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">Easy to install</span>
+          <span className="faqs__questionTitle">How do I install?</span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -31,7 +31,9 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">Contact</span>
+          <span className="faqs__questionTitle">
+            How do I contact Gravity LEDs?
+          </span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -39,7 +41,7 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">Returns</span>
+          <span className="faqs__questionTitle">What's the return policy?</span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -47,7 +49,9 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">Checkout</span>
+          <span className="faqs__questionTitle">
+            Where do I go to checkout?
+          </span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -55,7 +59,9 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">Privacy</span>
+          <span className="faqs__questionTitle">
+            What's the privacy policy?
+          </span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -63,7 +69,9 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">How many colors</span>
+          <span className="faqs__questionTitle">
+            How do I choose the effects?
+          </span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -71,7 +79,9 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">Waterproof</span>
+          <span className="faqs__questionTitle">
+            What is the waterproof rating?
+          </span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -79,7 +89,9 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">Updates</span>
+          <span className="faqs__questionTitle">
+            How do I install the newest software?
+          </span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -87,7 +99,9 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">How to find patterns</span>
+          <span className="faqs__questionTitle">
+            How do I set the lights to a certain effect?
+          </span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -95,7 +109,9 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">Requests</span>
+          <span className="faqs__questionTitle">
+            How do I request new products/ designs?
+          </span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
@@ -103,7 +119,7 @@ function Faqs() {
           </span>
         </div>
         <div className="faqs__question">
-          <span className="faqs__questionTitle">Debugging</span>
+          <span className="faqs__questionTitle">I have a problem! Help!</span>
           <span className="faqs__questionInfo">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
             iusto illum nisi cupiditate officiis mollitia dignissimos. Sed

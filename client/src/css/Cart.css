@@ -25,6 +25,20 @@
   height: 23vh;
 }
 
+.cart__signs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #111;
+  height: 50%;
+  padding: 0rem 1rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.1rem;
+  margin: 0.1rem;
+}
+
 .cart__title {
   font-size: 2rem;
   font-weight: 600;
@@ -43,6 +57,7 @@
 
 .cart__cartThree {
   display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -93,6 +108,7 @@
   cursor: pointer;
   border: none;
   transition: 0.5s linear;
+  width: 85%;
 }
 
 .cart__summaryCheckout:hover {

@@ -44,11 +44,16 @@ function CheckoutProduct({ id, title, price, image }) {
                   <a href="/shop">
                     <strong>{title}</strong>
                   </a>
+                  {/* <div>
+                    <span>${price}</span>
+                  </div> */}
                 </span>
-                <span onClick={addToCart}>+</span>
-                <span>|</span>
-                <span onClick={RemoveFromCart}>-</span>
-                <span>${price}</span>
+                <button onClick={addToCart} className="cart__signs">
+                  <strong>+</strong>
+                </button>
+                <button onClick={RemoveFromCart} className="cart__signs">
+                  <strong>-</strong>
+                </button>
               </div>
             </div>
 
