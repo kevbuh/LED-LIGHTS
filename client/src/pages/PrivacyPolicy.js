@@ -18,8 +18,8 @@ function PrivacyPolicy() {
               This includes any other personal and non-public information with
               any telemarketer or marketing agency. At Gravity LEDs, we will
               only reach out to you with your own consent. Your transaction
-              specific information is help by Stripe and that information will
-              be treated pursuant to their privacy policy. All transactions a
+              specific information is held by Stripe and that information will
+              be treated pursuant to their privacy policy. All transactions are
               protected through Stripe. Please contact us with any concerns.
             </span>
           </div>

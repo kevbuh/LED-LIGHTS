@@ -8,7 +8,9 @@ const passport = require("passport");
 const bcrypt = require("bcryptjs");
 const express = require("express");
 const cors = require("cors");
-
+const stripe = require("stripe")(
+  "sk_test_51H4vK0AOX0Rrng5PQGsmHj5lINOIPng7sPtu8AGsiYVAHQ6s93aEvevP1hZgb2e2C70FpeGU0m2vbBH28oPa299V00I1WtAUCH"
+);
 const app = express();
 
 require("./config/passport")(passport);
@@ -83,6 +85,41 @@ app.get("/logout", (req, res) => {
   req.logout();
   res.redirect("/register");
 });
+
+// ---------------------------Start of Stripe---------------------
+// Set your secret key. Remember to switch to your live secret key in production!
+// See your keys here: https://dashboard.stripe.com/account/apikeys
+// Set your secret key. Remember to switch to your live secret key in production!
+// See your keys here: https://dashboard.stripe.com/account/apikeys
+app.post("/pay-session", async (req, res) => {
+  const stripeSession = await stripe.checkout.sessions.create({
+    payment_method_types: ["card"],
+    line_items: [
+      {
+        price_data: {
+          currency: "usd",
+          product_data: {
+            name: "T-shirt",
+          },
+          unit_amount: 2000,
+        },
+        quantity: 1,
+      },
+    ],
+    mode: "payment",
+    success_url: "https://example.com/success?session_id={CHECKOUT_SESSION_ID}",
+    cancel_url: "https://example.com/cancel",
+  });
+});
+
+app.get("/pay", async (req, res) => {
+  const session = await stripe.checkout.sessions.retrieve(
+    "cs_test_ZVKMdNWuK2IQqLGUOAjwmPa1DLUDAkhnC0XRaqZcqXMgvsj55O2yikgX"
+  );
+  res.json({ session_id: session.id });
+});
+
+// -------------------------End of Stripe---------------------
 // app.post("/pay", async (req, res) => {
 //   const { email } = req.body;
 

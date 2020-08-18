@@ -2,17 +2,42 @@
 
 ### Todo
 
+- [] Footer
+  - [] Make sure is responsive
+  - [] Returns
+  - [] Shipping
+  - [] Warranty
+  - [] Terms and conditions
+  - [] Social Media Icons
+    - [] Link to our page
+    - [] Email
+      - [] Start up and email page with our email inside of it
+- [] Continue Shopping?
+- [] Return Policy
+- [] Video Showcase
+- [] Page to show all of the different color combinations
+- [] Tracking Numbers
+  - [] I have them
+  - [] Customer gets them
+- [] Local Storage for cart
+- [] More account info
+  - [] Show their email that will get sent the reciept
+    - [] Hover over to see what the email needed is for
+  - [] Orders placed
+    - [] Show status
+    - [] Tracking Numbers
+    - [] Address that will get filled in
+  - [] Logout button
+    - [] Refreshes page and tells them to log in
+      - [] With link
 - [] Remove sensitive info from git repository
   - [] Stripe
   - [] MongoDB
   - [] change all passwords to secure random ones
   - [] git ignore
 - [] Stripe
-  - [] Stripe Button
-    - [] Links to Stripe checkout
   - [] Stripe Checkout
     - [] Address Form
-    - [] Product Info on Right
     - [] Knows how many products in the cart
     - [] Sends email receipt to customer
     - [] Thanks Page
@@ -27,7 +52,6 @@
     - [] Picture of Product
     - [] Title
     - [] Price
-- [] Local Storage / Sessions
 - [] House / PO Box address
 - [] Account
   - [] Sessions
@@ -47,6 +71,10 @@
 
 ### Completed
 
+- [x] Stripe Button
+  - [x] Links to Stripe checkout
+  - [x] Product Info on Right
+- [x] Local Storage / Sessions
 - [x] Create User Form
   - [x] Shows who is signed in as
   - [x] My Account

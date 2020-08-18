@@ -1,12 +1,11 @@
 .productbig {
-  background: #4d4c4c;
-  color: #ffffff;
+  color: #000000;
   justify-content: center;
 }
 
 .productbig__topImage {
-  background: url("https://images.unsplash.com/photo-1557682268-e3955ed5d83f?ixlib=rb-1.2.1&auto=format&fit=crop&w=843&q=80")
-    top;
+  /* background: url("https://images.unsplash.com/photo-1527698952067-61fc35796fcd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80")
+    top; */
   height: 32vh;
   background-size: cover;
 }
@@ -141,7 +140,7 @@
 .tech__title {
   display: flex;
   font-size: 2rem;
-  margin: 1rem;
+  margin: 1rem 4rem;
   font-weight: 800;
 }
 
@@ -149,20 +148,20 @@
   display: flex;
   flex-direction: column;
   font-size: 1.05rem;
-  margin: 1rem 0;
+  margin: 1rem 4rem;
 }
 
 .tech__description {
   font-size: 2rem;
   font-weight: 800;
-  margin: 1rem;
+  margin: 1rem 4rem;
 }
 
 .tech__bigInfoDiv {
   display: flex;
   font-size: 1.05rem;
   width: 70%;
-  padding: 0 0 7rem 2.1rem;
+  padding: 0 0 7rem 6.5rem;
 }
 
 @media screen and (max-width: 860px) {

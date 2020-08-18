@@ -41,6 +41,17 @@ const App = () => {
             <SignUp />
           </Route>
 
+          <Route path="/payment-success">
+            <NavBar />
+            <div>Success!</div>
+            <Footer />
+          </Route>
+          <Route path="/payment-canceled">
+            <NavBar />
+            <div>Canceled.</div>
+            <Footer />
+          </Route>
+
           <Route path="/shop">
             <NavBar />
             <Products />

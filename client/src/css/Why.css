@@ -33,7 +33,17 @@
 
 .info__icon {
   font-size: 2rem !important;
-  margin: 1.3rem 0;
+  margin: 2.3rem 0;
+}
+
+.info__divLeft {
+}
+.info__divRight {
+}
+
+.info__divMain {
+  display: flex;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 600px) {

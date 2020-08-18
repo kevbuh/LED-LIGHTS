@@ -69,7 +69,7 @@ function NavBar() {
             <span>Shop</span>
           </Link>
           <Link to="/faqs" onClick={closeMenu} className="nav__sidebarLink">
-            <span>FAQS</span>
+            <span>FAQs</span>
           </Link>
           <Link to="/contact" onClick={closeMenu} className="nav__sidebarLink">
             <span>Contact</span>
@@ -112,7 +112,7 @@ function NavBar() {
 
         <Link to="/faqs" className="nav__link">
           <div className="nav__options">
-            <span className="nav__optionLineOne big">FAQS</span>
+            <span className="nav__optionLineOne big">FAQs</span>
           </div>
         </Link>
 

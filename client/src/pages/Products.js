@@ -10,7 +10,7 @@ function Products() {
         <div className="shop__title">
           <span> Gravity LEDs Products</span>
         </div>
-        <span className="shop__titleTwo"> Click To See More Info!</span>
+        <span className="shop__titleTwo"> Click to See More Info!</span>
         <span className="shop__arrow">
           <ArrowDownwardIcon />
         </span>

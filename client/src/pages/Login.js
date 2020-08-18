@@ -34,7 +34,7 @@ function Login() {
       </div> */}
 
         <Link to="/">
-          <h6>Gravity LEDS</h6>
+          <h6>Gravity LEDs</h6>
         </Link>
 
         {/* <TransitionAlerts text={"Hello"} /> */}
