@@ -1,14 +1,14 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
+const { ensureAuthenticated, forwardAuthenticated } = require("../config/auth");
 
 // Welcome Page
-router.get('/', forwardAuthenticated, (req, res) => res.render('welcome'));
-
+router.get("/", forwardAuthenticated, (req, res) => res.render("welcome"));
+// -----------------How to render this in React? -----------
 // Dashboard
-router.get('/dashboard', ensureAuthenticated, (req, res) =>
-  res.render('dashboard', {
-    name: req.user.name
+router.get("/dashboard", ensureAuthenticated, (req, res) =>
+  res.render("dashboard", {
+    name: req.user.name,
   })
 );
 

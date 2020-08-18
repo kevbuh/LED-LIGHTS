@@ -1,35 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import "../css/AccountDetails.css";
 
 function AccountDetails() {
-  const [registerUsername, setRegisterUsername] = useState("");
-  const [registerPassword, setRegisterPassword] = useState("");
-  const [loginUsername, setLoginUsername] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
   const [data, setData] = useState(null);
-  const register = () => {
-    Axios({
-      method: "POST",
-      data: {
-        username: registerUsername,
-        password: registerPassword,
-      },
-      withCredentials: true,
-      url: "http://localhost:4000/register",
-    }).then((res) => console.log(res));
-  };
-  const login = () => {
-    Axios({
-      method: "POST",
-      data: {
-        username: loginUsername,
-        password: loginPassword,
-      },
-      withCredentials: true,
-      url: "http://localhost:4000/login",
-    }).then((res) => console.log(res));
-  };
+
   const getUser = () => {
     Axios({
       method: "GET",
@@ -40,6 +15,20 @@ function AccountDetails() {
       console.log(res.data);
     });
   };
+
+  // const logOut = () => {
+  //   Axios({
+  //     method: "GET",
+  //     withCredentials: true,
+  //     url: "https://localhost:4000/logout",
+  //   }).then((res) => {
+  //     setData(null);
+  //   });
+  // }
+
+  useEffect(() => {
+    getUser();
+  }, []);
   return (
     <section className="account">
       <div className="account__details">
@@ -48,18 +37,11 @@ function AccountDetails() {
       <div className="account__bottom">
         <div className="account_left">
           <div className="account__name">
-            <span>
-              Welcome,{" "}
-              {data ? (
-                <h1>Welcome Back {data.username}</h1>
-              ) : (
-                <h1>Please Sign In</h1>
-              )}
-            </span>
+            <span>Welcome, {data ? <span>{data.username}</span> : null}</span>
           </div>
-          <div className="account__email">
-            <span>kevinbuhler@gmail.com</span>
-          </div>
+          {/* <div className="account__email">
+            <span>Hello, {data ? <span>{data.email}</span>
+          </div> */}
           <div className="account__addressTitle">
             <span> Primary Address</span>
           </div>
@@ -77,6 +59,7 @@ function AccountDetails() {
           </div>
         </div>
       </div>
+      <button type="button">Log Out</button>
     </section>
   );
 }

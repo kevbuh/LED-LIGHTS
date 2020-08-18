@@ -1,26 +1,26 @@
-const mongoose = require("mongoose");
-const express = require("express");
-const cors = require("cors");
-const passport = require("passport");
 const cookieParser = require("cookie-parser");
-const bcrypt = require("bcryptjs");
 const session = require("express-session");
 const bodyParser = require("body-parser");
-const app = express();
 const User = require("./Schemas/User");
+// const flash = require("connect-flash");
+const mongoose = require("mongoose");
+const passport = require("passport");
+const bcrypt = require("bcryptjs");
+const express = require("express");
+const cors = require("cors");
 
-mongoose.connect(
-  "mongodb+srv://kevinbuhlerr:0vrdADLjTBKuL7BP@findnue1.xj8t2.mongodb.net/<dbname>?retryWrites=true&w=majority",
-  {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-  },
-  () => {
-    console.log("Mongoose Is Connected");
-  }
-);
+const app = express();
 
-//Middleware
+require("./config/passport")(passport);
+
+const db = require("./config/keys").MongoURI;
+
+mongoose
+  .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log("MongoDB Connected..."))
+  .catch((err) => console.log(err));
+
+//-----------Middleware--------------
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
@@ -41,7 +41,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 require("./config/passportConfig")(passport);
 
-//Routes
+// Routes
+// app.use("/", require("./routes/index.js"));
+// app.use("/users", require("./routes/users.js"));
+// Routes
 app.post("/login", (req, res, next) => {
   passport.authenticate("local", (err, user, info) => {
     if (err) throw err;
@@ -61,8 +64,10 @@ app.post("/register", (req, res) => {
     if (doc) res.send("User Already Exists");
     if (!doc) {
       const hashedPassword = await bcrypt.hash(req.body.password, 10);
+
       const newUser = new User({
         username: req.body.username,
+        email: req.body.email,
         password: hashedPassword,
       });
       await newUser.save();
@@ -71,14 +76,15 @@ app.post("/register", (req, res) => {
   });
 });
 app.get("/user", (req, res) => {
-  res.send(req.user); // The req.user stores the user for the entire application for the user that has been authenticated inside of it
+  res.send(req.user); // The req.user stores the entire user that has been authenticated inside of it.
+  console.log("success, user sent");
 });
-// app.get("/logout", (req, res) => {
-//   req.logout();
-//   res.redirect("/users/login");
-// });
+app.get("/logout", (req, res) => {
+  req.logout();
+  res.redirect("/register");
+});
+//----------------------------------------- END OF ROUTES---------------------------------------------------
 
-//Start server
-app.listen(4000, () => {
-  console.log("Server Has Started");
-});
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, console.log(`Server started on port ${PORT}`));

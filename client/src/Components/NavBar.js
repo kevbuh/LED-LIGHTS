@@ -1,14 +1,27 @@
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
-// import AccountBoxIcon from "@material-ui/icons/AccountBox";
+import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import { useStateValue } from "../contexts/StateProvider";
 import SearchIcon from "@material-ui/icons/Search";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
 import "../css/NavBar.css";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Axios from "axios";
 
 function NavBar() {
   const [{ cart }] = useStateValue();
+  const [data, setData] = useState(null);
+
+  const getUser = () => {
+    Axios({
+      method: "GET",
+      withCredentials: true,
+      url: "http://localhost:4000/user",
+    }).then((res) => {
+      setData(res.data);
+      console.log(res.data);
+    });
+  };
 
   const openMenu = () => {
     console.log("SIDEBAR OPENED!!!!!!!!!!!!!!");
@@ -18,6 +31,10 @@ function NavBar() {
     console.log("SIDEBAR CLOSED!!!!!!!!!!!!!!");
     document.querySelector(".nav__sidebar").classList.remove("open");
   };
+
+  useEffect(() => {
+    getUser();
+  }, []);
 
   return (
     <nav className="nav">
@@ -56,13 +73,23 @@ function NavBar() {
           <Link to="/checkout" onClick={closeMenu} className="nav__sidebarLink">
             <span>Cart: {cart?.length}</span>
           </Link>
-          <Link
-            to="/users/login"
-            onClick={closeMenu}
-            className="nav__sidebarLink"
-          >
-            <span>Login</span>
-          </Link>
+          {data ? (
+            <Link
+              to="/account"
+              onClick={closeMenu}
+              className="nav__sidebarLink"
+            >
+              <span>{data.username}</span>
+            </Link>
+          ) : (
+            <Link
+              to="/users/login"
+              onClick={closeMenu}
+              className="nav__sidebarLink"
+            >
+              <span>Login</span>
+            </Link>
+          )}
         </div>
       </aside>
 
@@ -105,17 +132,19 @@ function NavBar() {
             </div>
           </Link>
 
-          <Link to="/users/login" className="nav__link">
-            <div className="nav__options">
-              <span className="nav__optionLineOne big">Login</span>
-            </div>
-          </Link>
-
-          {/* <Link to="/account">
-            <div className="nav__accountBoxIcon big">
-              <AccountBoxIcon />
-            </div>
-          </Link> */}
+          {data ? (
+            <Link to="/account">
+              <div className="nav__accountBoxIcon big">
+                <AccountBoxIcon />
+              </div>
+            </Link>
+          ) : (
+            <Link to="/users/login" className="nav__link">
+              <div className="nav__options">
+                <span className="nav__optionLineOne big">Login</span>
+              </div>
+            </Link>
+          )}
         </div>
       </div>
     </nav>

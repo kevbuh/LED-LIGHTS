@@ -6,6 +6,7 @@ import Axios from "axios";
 function Login() {
   const [registerUsername, setRegisterUsername] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
+  const [registerEmail, setRegisterEmail] = useState("");
   const [loginUsername, setLoginUsername] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [data, setData] = useState(null);
@@ -15,10 +16,15 @@ function Login() {
       data: {
         username: registerUsername,
         password: registerPassword,
+        email: registerEmail,
       },
       withCredentials: true,
       url: "http://localhost:4000/register",
-    }).then((res) => console.log(res));
+    })
+      .then((res) => console.log(res))
+      .catch((err) => {
+        console.log(err);
+      });
   };
   const login = () => {
     Axios({
@@ -83,7 +89,7 @@ function Login() {
             <a href="/">Forgot Password?</a>
           </div>
 
-          <button onClick={login} className="login__login-btn">
+          <button type="button" onClick={login} className="login__login-btn">
             Log In Now
           </button>
 

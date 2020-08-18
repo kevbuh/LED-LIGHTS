@@ -24,14 +24,10 @@
     - [] Price
 - [] Local Storage / Sessions
 - [] House / PO Box address
-- [] Create User Form
-  - [] My Account
-  - [] Login Page
-    - [] Flash errors
-  - [] Register Page
+- [] Account
+  - [] Flash errors
+  - [] Log Out Buttons
   - [] Form Validation
-  - [] Submit user info to Server
-  - [] Show user info in account
   - [] reCAPTCHA
   - [] First name, Last Name, Email
   - [] Sends email to your own email with a link to activate your account
@@ -45,6 +41,12 @@
 
 ### Completed
 
+- [x] Create User Form
+  - [x] My Account
+  - [x] Login Page
+  - [x] Register Page
+  - [x] Submit user info to Server
+  - [x] Show user info in account
 - [x] FAQS
       _ [x] How to sync multiple LED strips
       _ [x] Easy to install?

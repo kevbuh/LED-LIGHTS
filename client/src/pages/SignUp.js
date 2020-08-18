@@ -4,21 +4,34 @@ import { Link } from "react-router-dom";
 import Axios from "axios";
 
 function SignUp() {
+  // const [registerUsername, setRegisterUsername] = useState("");
+  // const [registerPassword, setRegisterPassword] = useState("");
+  // const [loginUsername, setLoginUsername] = useState("");
+  // const [loginPassword, setLoginPassword] = useState("");
+  // const [data, setData] = useState(null);
+
   const [registerUsername, setRegisterUsername] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
+  const [registerEmail, setRegisterEmail] = useState("");
   const [loginUsername, setLoginUsername] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [data, setData] = useState(null);
+
   const register = () => {
     Axios({
       method: "POST",
       data: {
         username: registerUsername,
         password: registerPassword,
+        email: registerEmail,
       },
       withCredentials: true,
       url: "http://localhost:4000/register",
-    }).then((res) => console.log(res));
+    })
+      .then((res) => console.log(res))
+      .catch((err) => {
+        console.log(err);
+      });
   };
   const login = () => {
     Axios({
@@ -53,6 +66,14 @@ function SignUp() {
               onChange={(e) => setRegisterUsername(e.target.value)}
               type="text"
               placeholder="Username"
+            />
+            <span className="login__check-message hidden">Required</span>
+          </div>
+          <div className="login__textbox">
+            <input
+              onChange={(e) => setRegisterEmail(e.target.value)}
+              type="email"
+              placeholder="Email"
             />
             <span className="login__check-message hidden">Required</span>
           </div>
