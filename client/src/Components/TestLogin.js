@@ -46,10 +46,12 @@ function App() {
         <h1>Register</h1>
         <input
           placeholder="username"
+          required
           onChange={(e) => setRegisterUsername(e.target.value)}
         />
         <input
           placeholder="password"
+          required
           onChange={(e) => setRegisterPassword(e.target.value)}
         />
         <button onClick={register}>Submit</button>
@@ -59,10 +61,12 @@ function App() {
         <h1>Login</h1>
         <input
           placeholder="username"
+          required
           onChange={(e) => setLoginUsername(e.target.value)}
         />
         <input
           placeholder="password"
+          required
           onChange={(e) => setLoginPassword(e.target.value)}
         />
         <button onClick={login}>Submit</button>

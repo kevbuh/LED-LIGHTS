@@ -69,6 +69,7 @@ function SignUp() {
         <form>
           <div className="login__textbox">
             <input
+              required
               onChange={(e) => setRegisterUsername(e.target.value)}
               type="text"
               placeholder="Username"
@@ -77,6 +78,7 @@ function SignUp() {
           </div>
           <div className="login__textbox">
             <input
+              required
               onChange={(e) => setRegisterEmail(e.target.value)}
               type="email"
               placeholder="Email"
@@ -85,6 +87,7 @@ function SignUp() {
           </div>
           <div className="login__textbox">
             <input
+              required
               onChange={(e) => setRegisterPassword(e.target.value)}
               type="password"
               placeholder="Password"

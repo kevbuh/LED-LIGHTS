@@ -2,6 +2,10 @@
 
 ### Todo
 
+- [] Remove sensitive info from git repository
+  - [] Stripe
+  - [] MongoDB
+  - [] change all passwords to secure random ones
 - [] Stripe
   - [] Stripe Button
     - [] Links to Stripe checkout

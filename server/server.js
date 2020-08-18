@@ -83,6 +83,18 @@ app.get("/logout", (req, res) => {
   req.logout();
   res.redirect("/register");
 });
+// app.post("/pay", async (req, res) => {
+//   const { email } = req.body;
+
+//   const paymentIntent = await stripe.paymentIntents.create({
+//     amount: 5000,
+//     currency: "usd",
+//     metadata: { integration_check: "accept_a_payment" },
+//     recepient_email: email,
+//   });
+
+//   res.json({ client_secret: paymentIntent["client_secret"] });
+// });
 //----------------------------------------- END OF ROUTES---------------------------------------------------
 
 const PORT = process.env.PORT || 4000;

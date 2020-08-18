@@ -43,6 +43,7 @@ function Login() {
             <input
               onChange={(e) => setLoginUsername(e.target.value)}
               type="text"
+              required
               placeholder="Username"
             />
             <span className="login__check-message hidden">Required</span>
@@ -51,6 +52,7 @@ function Login() {
             <input
               onChange={(e) => setLoginPassword(e.target.value)}
               type="password"
+              required
               placeholder="Password"
             />
             <span className="login__check-message hidden">Required</span>
