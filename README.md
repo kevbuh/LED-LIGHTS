@@ -6,6 +6,7 @@
   - [] Stripe
   - [] MongoDB
   - [] change all passwords to secure random ones
+  - [] git ignore
 - [] Stripe
   - [] Stripe Button
     - [] Links to Stripe checkout
