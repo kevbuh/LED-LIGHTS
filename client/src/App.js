@@ -16,10 +16,23 @@ import Why from "./Components/Why";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Faqs from "./pages/Faqs";
-import React from "react";
+import React, { useEffect } from "react";
 import "./css/App.css";
+import { useStateValue } from "./contexts/StateProvider";
 
 const App = () => {
+  // const [{ cart }, dispatch] = useStateValue();
+
+  // useEffect(() => {
+  //   console.log("local to cart");
+  //   localStorage.setItem("my-cart", JSON.stringify({ cart }));
+  //   console.log("LOCAL STORAGE WORKS");
+  //   const storage = localStorage.getItem("cart");
+  //   if (storage) {
+  //     setData(JSON.parse(JSON.stringify("cart")));
+  //   }
+  // });
+
   return (
     <Router>
       <div className="App">

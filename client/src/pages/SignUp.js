@@ -4,18 +4,24 @@ import { Link } from "react-router-dom";
 import Axios from "axios";
 
 function SignUp() {
-  // const [registerUsername, setRegisterUsername] = useState("");
-  // const [registerPassword, setRegisterPassword] = useState("");
-  // const [loginUsername, setLoginUsername] = useState("");
-  // const [loginPassword, setLoginPassword] = useState("");
-  // const [data, setData] = useState(null);
-
   const [registerUsername, setRegisterUsername] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [registerEmail, setRegisterEmail] = useState("");
   const [loginUsername, setLoginUsername] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [data, setData] = useState(null);
+
+  // const useStateWithLocalStorage = (localStorageKey) => {
+  //   const [data, setData] = useState(
+  //     localStorage.getItem(localStorageKey) || ""
+  //   );
+
+  //   useEffect(() => {
+  //     localStorage.setItem(localStorageKey, data);
+  //   }, [data]);
+
+  //   return [data, setData];
+  // };
 
   const register = () => {
     Axios({

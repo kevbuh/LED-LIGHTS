@@ -11,8 +11,12 @@ function AccountDetails() {
       withCredentials: true,
       url: "http://localhost:4000/user",
     }).then((res) => {
-      setData(res.data);
-      console.log(res.data);
+      // setData(res.data);
+      console.log("LOCAL STORAGE WORKS");
+      const storage = localStorage.getItem("user");
+      if (storage) {
+        setData(JSON.parse(JSON.stringify(res.data)));
+      }
     });
   };
 
@@ -26,6 +30,12 @@ function AccountDetails() {
   //   });
   // }
 
+  const logOut = () => {
+    localStorage.removeItem("user");
+    localStorage.removeItem("cart");
+    console.log("LOCAL STORAGE CLEARED");
+  };
+
   useEffect(() => {
     getUser();
   }, []);
@@ -36,8 +46,10 @@ function AccountDetails() {
       </div>
       <div className="account__bottom">
         <div className="account_left">
-          <div className="account__name">
-            <span>Welcome, {data ? <span>{data.username}</span> : null}</span>
+          <div>
+            <span className="account__name">
+              Welcome, {data ? <span> {data.username}</span> : null}
+            </span>
           </div>
           {/* <div className="account__email">
             <span>Hello, {data ? <span>{data.email}</span>
@@ -59,7 +71,9 @@ function AccountDetails() {
           </div>
         </div>
       </div>
-      <button type="button">Log Out</button>
+      <button type="button" className="account__logout" onClick={logOut}>
+        Log Out
+      </button>
     </section>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/Login.css";
 import { Link } from "react-router-dom";
 import Axios from "axios";
@@ -10,22 +10,7 @@ function Login() {
   const [loginUsername, setLoginUsername] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [data, setData] = useState(null);
-  const register = () => {
-    Axios({
-      method: "POST",
-      data: {
-        username: registerUsername,
-        password: registerPassword,
-        email: registerEmail,
-      },
-      withCredentials: true,
-      url: "http://localhost:4000/register",
-    })
-      .then((res) => console.log(res))
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+
   const login = () => {
     Axios({
       method: "POST",
@@ -35,18 +20,12 @@ function Login() {
       },
       withCredentials: true,
       url: "http://localhost:4000/login",
-    }).then((res) => console.log(res));
-  };
-  const getUser = () => {
-    Axios({
-      method: "GET",
-      withCredentials: true,
-      url: "http://localhost:4000/user",
     }).then((res) => {
-      setData(res.data);
-      console.log(res.data);
+      console.log(res);
+      localStorage.setItem("user", JSON.stringify(res.data));
     });
   };
+
   return (
     <section className="login">
       <div className="login__form">
@@ -110,12 +89,6 @@ function Login() {
           Don't Have an account?
           <a href="/users/register">Sign Up</a>
         </div>
-      </div>
-
-      <div>
-        <h1>Get User</h1>
-        <button onClick={getUser}>Submit</button>
-        {data ? <h1>Welcome Back {data.username}</h1> : null}
       </div>
     </section>
   );

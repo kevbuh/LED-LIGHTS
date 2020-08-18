@@ -1,3 +1,5 @@
+// import { useStateValue } from "../contexts/StateProvider";
+
 export const initialState = {
   cart: [],
   // user: null,
@@ -7,18 +9,11 @@ export const getTotal = (cart) =>
   cart?.reduce((amount, item) => item.price + amount, 0);
 
 const reducer = (state, action) => {
+  // const [{ cart }, dispatch] = useStateValue();
   switch (action.type) {
-    // case "SET_POSTS":
-    //   const statusReadFromLocalStorage = JSON.parse(
-    //     localStorage.getItem("my-cart") || "{}"
-    //   );
-    //   return statusReadFromLocalStorage;
-    // case "SET_USER":
-    //   return {
-    //     ...state,
-    //     user: action.user,
-    //   };
     case "ADD_TO_CART":
+      // localStorage.setItem("cart", JSON.stringify(cart));
+      // console.log("local to cart");
       return {
         ...state,
         cart: [...state.cart, action.item],

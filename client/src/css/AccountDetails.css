@@ -57,3 +57,24 @@
   margin-bottom: 2rem;
   padding-right: 4rem;
 }
+
+.account__logout {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: 2px solid #111;
+  background: #111111;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .account {
+    margin: 1rem 0;
+  }
+
+  .account_left {
+    padding-left: 1rem;
+  }
+}

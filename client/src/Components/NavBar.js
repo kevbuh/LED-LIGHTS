@@ -18,8 +18,12 @@ function NavBar() {
       withCredentials: true,
       url: "http://localhost:4000/user",
     }).then((res) => {
-      setData(res.data);
-      console.log(res.data);
+      // setData(res.data);
+      console.log("LOCAL STORAGE WORKS");
+      const storage = localStorage.getItem("user");
+      if (storage) {
+        setData(JSON.parse(JSON.stringify(res.data)));
+      }
     });
   };
 

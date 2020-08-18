@@ -25,6 +25,8 @@
 - [] Local Storage / Sessions
 - [] House / PO Box address
 - [] Account
+  - [] Sessions
+  - [] Redirect if authenticated
   - [] Flash errors
   - [] Log Out Buttons
   - [] Form Validation
@@ -33,7 +35,6 @@
   - [] Sends email to your own email with a link to activate your account
   - [] Link to email sent: https://mail.google.com/mail/u/0/#inbox/FMfcgxwJXLkRdsgJxzpLTsCdFSXVQbbf
 - [] Orders
-- [] Shows who is signed in as
 - [] Domain Name
   - [] Gravity LED, Space LED
 - [] WLED Wifi accessible
@@ -42,6 +43,7 @@
 ### Completed
 
 - [x] Create User Form
+  - [x] Shows who is signed in as
   - [x] My Account
   - [x] Login Page
   - [x] Register Page

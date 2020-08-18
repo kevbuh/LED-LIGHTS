@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useStateValue } from "../contexts/StateProvider";
 import "../css/ProductInfo.css";
 import Info from "../Components/Why";
