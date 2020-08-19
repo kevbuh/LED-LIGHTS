@@ -37,7 +37,9 @@ function Subtotal() {
     const stripe = await stripePromise;
     const { error } = await stripe
       .redirectToCheckout({
-        lineItems: [{ price: "price_1HHYwHAOX0Rrng5PGU68Ft4C", quantity: 1 }],
+        lineItems: [
+          { price: "price_1HHYwHAOX0Rrng5PGU68Ft4C", quantity: cart.length },
+        ],
         mode: "payment",
         // Do not rely on the redirect to the successUrl for fulfilling
         // purchases, customers may not always reach the success_url after
@@ -46,6 +48,10 @@ function Subtotal() {
         // https://stripe.com/docs/payments/checkout/fulfillment
         successUrl: "http://localhost:3000/payment-success",
         cancelUrl: "http://localhost:3000/payment-canceled",
+        billingAddressCollection: "required",
+        shippingAddressCollection: {
+          allowedCountries: ["US"],
+        },
       })
       .then(function (result) {
         if (result.error) {

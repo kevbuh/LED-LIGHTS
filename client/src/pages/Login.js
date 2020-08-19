@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/Login.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Axios from "axios";
 
 function Login() {
@@ -10,6 +10,8 @@ function Login() {
   const [loginUsername, setLoginUsername] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [data, setData] = useState(null);
+
+  let history = useHistory();
 
   const login = () => {
     Axios({
@@ -23,6 +25,7 @@ function Login() {
     }).then((res) => {
       console.log(res);
       localStorage.setItem("user", JSON.stringify(res.data));
+      history.push("/account");
     });
   };
 

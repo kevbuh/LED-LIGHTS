@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "../css/Login.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Axios from "axios";
 
 function SignUp() {
   const [registerUsername, setRegisterUsername] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [registerEmail, setRegisterEmail] = useState("");
+  const [registerPhone, setRegisterPhone] = useState("");
   const [loginUsername, setLoginUsername] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [data, setData] = useState(null);
@@ -23,6 +24,8 @@ function SignUp() {
   //   return [data, setData];
   // };
 
+  let history = useHistory();
+
   const register = () => {
     Axios({
       method: "POST",
@@ -30,11 +33,14 @@ function SignUp() {
         username: registerUsername,
         password: registerPassword,
         email: registerEmail,
+        phone: registerPhone,
       },
       withCredentials: true,
       url: "http://localhost:4000/register",
     })
-      .then((res) => console.log(res))
+      .then(() => {
+        history.push("/users/login");
+      })
       .catch((err) => {
         console.log(err);
       });
@@ -87,6 +93,15 @@ function SignUp() {
           </div>
           <div className="login__textbox">
             <input
+              onChange={(e) => setRegisterPhone(e.target.value)}
+              type="tel"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              placeholder="*Phone Number (XXX-XXX-XXX)"
+            />
+            <span className="login__check-message hidden">Required</span>
+          </div>
+          <div className="login__textbox">
+            <input
               required
               onChange={(e) => setRegisterPassword(e.target.value)}
               type="password"
@@ -107,7 +122,7 @@ function SignUp() {
             <a href="/">Forgot Password?</a>
           </div> */}
 
-          <button onClick={register} className="login__login-btn">
+          <button type="button" onClick={register} className="login__login-btn">
             Sign Up
           </button>
 
@@ -120,6 +135,7 @@ function SignUp() {
           Already have an account?
           <a href="/users/login"> Sign In</a>
         </div>
+        <div className="login__dont-have-account">* = optional</div>
       </div>
     </section>
   );

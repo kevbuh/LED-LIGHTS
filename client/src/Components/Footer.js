@@ -66,18 +66,18 @@ function Footer() {
           <CopyrightIcon className="footer__copyrightIcon" />
           {new Date().getFullYear()} | Gravity LEDs
         </span>
-        <div className="footer__policies">
+        {/* <div className="footer__policies">
           <div className="footer__privacy">
-            <h3 className="footer__policy">
-              <h6>All Rights Reserved</h6>
+            <span className="footer__policy">
+              <span className="footer__details">All Rights Reserved</span>
 
-              <h6>
+              <span className="footer__details">
                 *The product images are for illustration purposes only and may
                 not be an exact representation of the product.{" "}
-              </h6>
-            </h3>
+              </span>
+            </span>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="width">
         <div className="footer__media">

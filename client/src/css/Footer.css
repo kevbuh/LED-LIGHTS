@@ -6,10 +6,15 @@
   padding: 2rem;
   vertical-align: top;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .width {
   width: 20%;
+}
+
+.footer__details {
+  font-size: 0.5rem;
 }
 
 .footer__links {

@@ -16,10 +16,10 @@ import Why from "./Components/Why";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Faqs from "./pages/Faqs";
-import React, { useEffect } from "react";
+import React from "react";
 import "./css/App.css";
-import { useStateValue } from "./contexts/StateProvider";
 import Success from "./pages/Success";
+import ScrollToTop from "./Components/Scroll";
 
 const App = () => {
   // const [{ cart }, dispatch] = useStateValue();
@@ -33,12 +33,10 @@ const App = () => {
   //     setData(JSON.parse(JSON.stringify("cart")));
   //   }
   // });
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Switch>
           <Route path="/users/register">

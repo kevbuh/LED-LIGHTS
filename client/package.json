@@ -12,6 +12,7 @@
     "react": "^16.13.1",
     "react-currency-format": "^1.0.0",
     "react-dom": "^16.13.1",
+    "react-phone-number-input": "^3.0.25",
     "react-scripts": "3.4.1",
     "react-sidebar": "^3.0.2"
   },

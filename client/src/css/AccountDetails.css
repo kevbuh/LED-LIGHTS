@@ -1,10 +1,11 @@
 .account {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 4rem 0;
   align-items: center;
-  height: 60vh;
 }
+
 .account__bottom {
   display: flex;
 }
@@ -13,6 +14,11 @@
   display: flex;
   flex-direction: column;
   margin-right: 2rem;
+}
+
+.account__update {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .account__details {
@@ -54,7 +60,6 @@
 .account__email {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
   padding-right: 4rem;
 }
 
@@ -69,12 +74,52 @@
   outline: none;
 }
 
-@media screen and (max-width: 600px) {
+.account__or {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 660px) {
   .account {
-    margin: 1rem 0;
+    flex-wrap: wrap;
+    margin: 1rem 1rem;
   }
 
-  .account_left {
-    padding-left: 1rem;
+  .account__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .account__right {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-left: none;
+  }
+
+  .account__name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .account__addressTitle {
+    margin-bottom: 2rem;
+  }
+
+  .account__logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #111;
+    background: #111111;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
   }
 }
