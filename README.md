@@ -39,22 +39,14 @@
     - [] Show status
     - [] Tracking Numbers
     - [] Address that will get filled in
-  - [] Logout button
-    - [] Refreshes page and tells them to log in
-      - [] With link
 - [] Remove sensitive info from git repository
   - [] Stripe
   - [] MongoDB
   - [] change all passwords to secure random ones
   - [] git ignore
 - [] Stripe
-  - [] Stripe Checkout
-    - [] Address Form
-    - [] Knows how many products in the cart
-    - [] Sends email receipt to customer
-    - [] Thanks Page
-    - [] Link to continue shopping
-    - [] address
+  - [] Sends email receipt to customer
+  - [] Link to continue shopping
 - [] Search
   - [] Categories side bar with:
     - [] All Products
@@ -67,22 +59,30 @@
 - [] House / PO Box address
 - [] Account
   - [] Sessions
-  - [] Redirect if authenticated
   - [] Flash errors
-  - [] Log Out Buttons
   - [] Form Validation
   - [] reCAPTCHA
-  - [] First name, Last Name, Email
   - [] Sends email to your own email with a link to activate your account
   - [] Link to email sent: https://mail.google.com/mail/u/0/#inbox/FMfcgxwJXLkRdsgJxzpLTsCdFSXVQbbf
 - [] Orders
 - [] Domain Name
   - [] Gravity LED, Space LED
-- [] WLED Wifi accessible
-  - [] https://github.com/Aircoookie/WLED
 
 ### Completed
 
+- [x] Logout button
+  - [x] Refreshes page and tells them to log in
+    - [x] With link
+- [x] WLED Wifi accessible
+  - [x] https://github.com/Aircoookie/WLED
+  - [x] Redirect if authenticated
+  - [x] Log Out Buttons
+  - [x] First name, Last Name, Email
+  - [x] Stripe Checkout
+    - [x] Address Form
+    - [x] Knows how many products in the cart
+    - [x] Thanks Page
+    - [x] address
 - [x] Stripe Button
   - [x] Links to Stripe checkout
   - [x] Product Info on Right

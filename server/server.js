@@ -53,9 +53,15 @@ app.post("/login", (req, res, next) => {
     if (!user) res.send("No User Exists");
     else {
       req.logIn(user, (err) => {
-        if (err) throw err;
+        if (err) {
+          throw err;
+        }
+        // res.json({ redirectURI: "/account" });
+        // return res.redirect(200, "/");
+        // window.location.href = "http://localhost:3000/";
         res.send("Successfully Authenticated");
-        console.log(req.user);
+        // res.redirect("/");
+        // console.log(req.user);
       });
     }
   })(req, res, next);
@@ -70,6 +76,7 @@ app.post("/register", (req, res) => {
       const newUser = new User({
         username: req.body.username,
         email: req.body.email,
+        phone: req.body.phone,
         password: hashedPassword,
       });
       await newUser.save();
@@ -77,13 +84,47 @@ app.post("/register", (req, res) => {
     }
   });
 });
+app.post("/update", (req, res) => {
+  User.findOne({ username: req.body.username }, (err, doc) => {
+    if (err) throw err;
+    if (doc) res.send("User Already Exists");
+    if (!doc) {
+      // const hashedPassword = bcrypt.hash(req.body.password, 10);
+
+      const user = User({
+        username: req.body.username,
+        email: req.body.email,
+        phone: req.body.phone,
+        password: req.body.password,
+      });
+      user.save();
+      res.send("User Created"); // "user" is the user with newly updated info
+      user.save(function (err) {
+        if (err) return err;
+
+        // What's happening in passport's session? Check a specific field...
+        console.log("Before relogin: " + req.session.passport.user.email);
+        console.log("Before relogin: " + req.session.passport.user.phone);
+
+        req.login(user, function (err) {
+          if (err) return next(err);
+
+          console.log("After relogin: " + req.session.passport.user.email);
+          console.log("After relogin: " + req.session.passport.user.phone);
+          res.send(200);
+        });
+      });
+    }
+  });
+});
+
 app.get("/user", (req, res) => {
   res.send(req.user); // The req.user stores the entire user that has been authenticated inside of it.
   console.log("success, user sent");
 });
 app.get("/logout", (req, res) => {
   req.logout();
-  res.redirect("/register");
+  res.redirect("/users/login");
 });
 
 // ---------------------------Start of Stripe---------------------
@@ -93,6 +134,10 @@ app.get("/logout", (req, res) => {
 // See your keys here: https://dashboard.stripe.com/account/apikeys
 app.post("/pay-session", async (req, res) => {
   const stripeSession = await stripe.checkout.sessions.create({
+    billing_address_collection: "auto",
+    shipping_address_collection: {
+      allowed_countries: ["US", "CA"],
+    },
     payment_method_types: ["card"],
     line_items: [
       {

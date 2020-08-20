@@ -108,8 +108,10 @@ function AccountDetails() {
           </div> */}
           </div>
           <div className="account__right">
-            <button type="button" className="account__logout" onClick={logOut}>
-              Update Your Information
+            <button type="button" className="account__logout">
+              <Link to="/update" className="about__updateLink">
+                Update Your Information
+              </Link>
             </button>
             <span className="account__or">or</span>
             <button type="button" className="account__logout" onClick={logOut}>

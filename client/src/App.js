@@ -20,6 +20,7 @@ import React from "react";
 import "./css/App.css";
 import Success from "./pages/Success";
 import ScrollToTop from "./Components/Scroll";
+import Update from "./pages/Update.js";
 
 const App = () => {
   // const [{ cart }, dispatch] = useStateValue();
@@ -41,6 +42,12 @@ const App = () => {
         <Switch>
           <Route path="/users/register">
             <SignUp />
+            <Footer />
+          </Route>
+
+          <Route path="/update">
+            <NavBar />
+            <Update />
             <Footer />
           </Route>
 

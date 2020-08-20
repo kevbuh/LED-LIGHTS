@@ -41,6 +41,10 @@
   margin-bottom: 1.9rem;
 }
 
+a {
+  color: inherit;
+}
+
 .account__name {
   font-size: 1.4rem;
   font-weight: 600;
