@@ -21,6 +21,7 @@ import "./css/App.css";
 import Success from "./pages/Success";
 import ScrollToTop from "./Components/Scroll";
 import Update from "./pages/Update.js";
+import Lulu from "./Components/Lulu";
 
 const App = () => {
   // const [{ cart }, dispatch] = useStateValue();
@@ -139,6 +140,7 @@ const App = () => {
             <NavBar />
             <HomeScreen />
             <Why />
+            <Lulu />
             <ChipInfo />
             <Gallery />
             <BottomSection />

@@ -32,9 +32,10 @@
   - [] I have them
   - [] Customer gets them
 - [] Local Storage for cart
-- [] More account info
+- [] Account
   - [] Show their email that will get sent the reciept
     - [] Hover over to see what the email needed is for
+  - [] Make a form so that they can update the info themselves
   - [] Orders placed
     - [] Show status
     - [] Tracking Numbers
