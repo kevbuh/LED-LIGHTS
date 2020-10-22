@@ -12,6 +12,7 @@ const stripe = require("stripe")(
   "sk_test_51H4vK0AOX0Rrng5PQGsmHj5lINOIPng7sPtu8AGsiYVAHQ6s93aEvevP1hZgb2e2C70FpeGU0m2vbBH28oPa299V00I1WtAUCH"
 );
 const app = express();
+const path = require("path");
 
 require("./config/passport")(passport);
 
@@ -178,6 +179,14 @@ app.get("/pay", async (req, res) => {
 //   res.json({ client_secret: paymentIntent["client_secret"] });
 // });
 //----------------------------------------- END OF ROUTES---------------------------------------------------
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html")); // relative path
+  });
+}
 
 const PORT = process.env.PORT || 4000;
 
