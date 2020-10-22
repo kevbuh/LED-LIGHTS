@@ -1,0 +1,34 @@
+.lulu {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+  background: #ffffff;
+}
+
+.lulu__image {
+  width: 25rem;
+}
+
+.lulu__left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lulu__leftTextOne {
+  font-size: 4.4rem;
+  font-weight: 700;
+  border-bottom: 4px solid #111111;
+  padding-bottom: 1rem;
+}
+
+.lulu__leftTextTwo {
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+
+.lulu__leftTextSmall {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}

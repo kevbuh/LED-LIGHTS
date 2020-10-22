@@ -22,6 +22,7 @@ import Success from "./pages/Success";
 import ScrollToTop from "./Components/Scroll";
 import Update from "./pages/Update.js";
 import Lulu from "./Components/Lulu";
+import Canceled from "./pages/Canceled";
 
 const App = () => {
   // const [{ cart }, dispatch] = useStateValue();
@@ -76,7 +77,7 @@ const App = () => {
 
           <Route path="/payment-canceled">
             <NavBar />
-            <div>Canceled.</div>
+            <Canceled />
             <Footer />
           </Route>
 
