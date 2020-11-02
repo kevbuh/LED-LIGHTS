@@ -17,7 +17,7 @@ const path = require("path");
 require("./config/passport")(passport);
 
 const db = require("./config/keys").MongoURI;
-// test
+// test fasdkfjsadljl
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB Connected..."))
