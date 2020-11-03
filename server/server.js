@@ -188,6 +188,4 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-const PORT = process.env.PORT || 4000;
-
-app.listen(process.env.PORT, '0.0.0.0')
+app.listen(process.env.PORT || 5000)
