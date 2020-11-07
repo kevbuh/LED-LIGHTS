@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/HomeScreen.css";
+import { Link } from "react-router-dom";
 
 function HomeScreen() {
   return (
