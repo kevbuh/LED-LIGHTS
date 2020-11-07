@@ -9,25 +9,19 @@ function Faqs() {
         <div className="faqs__question">
           <span className="faqs__questionTitle">How to Sync?</span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            Verify that phone and LED strip are on the same network.
           </span>
         </div>
         <div className="faqs__question">
           <span className="faqs__questionTitle">How do I install?</span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            Download WLED in the app store, and fill in your wifi information.
           </span>
         </div>
         <div className="faqs__question">
           <span className="faqs__questionTitle">Removable?</span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            Yes, however warranty is voided once protective covering is removed.
           </span>
         </div>
         <div className="faqs__question">
@@ -35,17 +29,13 @@ function Faqs() {
             How do I contact Gravity LEDs?
           </span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            Visit our contact page!
           </span>
         </div>
         <div className="faqs__question">
           <span className="faqs__questionTitle">What's the return policy?</span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            Contact us and we will work out a plan.
           </span>
         </div>
         <div className="faqs__question">
@@ -53,9 +43,7 @@ function Faqs() {
             Where do I go to checkout?
           </span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            Add a product to cart, and click checkout!
           </span>
         </div>
         <div className="faqs__question">
@@ -63,9 +51,7 @@ function Faqs() {
             What's the privacy policy?
           </span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            We do not sell any of your information. All credit card info is covered through Stripe's policy.
           </span>
         </div>
         <div className="faqs__question">
@@ -73,9 +59,7 @@ function Faqs() {
             How do I choose the effects?
           </span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            Download the WLED light and click on patterns.
           </span>
         </div>
         <div className="faqs__question">
@@ -83,9 +67,7 @@ function Faqs() {
             What is the waterproof rating?
           </span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            IP67
           </span>
         </div>
         <div className="faqs__question">
@@ -93,9 +75,7 @@ function Faqs() {
             How do I install the newest software?
           </span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            We will update through the WLED software.
           </span>
         </div>
         <div className="faqs__question">
@@ -103,9 +83,7 @@ function Faqs() {
             How do I set the lights to a certain effect?
           </span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            Millions of colors and a hundred patterns are available through the WLED application.
           </span>
         </div>
         <div className="faqs__question">
@@ -113,17 +91,7 @@ function Faqs() {
             How do I request new products/ designs?
           </span>
           <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
-          </span>
-        </div>
-        <div className="faqs__question">
-          <span className="faqs__questionTitle">I have a problem! Help!</span>
-          <span className="faqs__questionInfo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-            iusto illum nisi cupiditate officiis mollitia dignissimos. Sed
-            ratione autem consequuntur.
+            Contact our design department!
           </span>
         </div>
       </div>

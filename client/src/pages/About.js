@@ -10,9 +10,7 @@ function About() {
         </div>
         <div className="about__info">
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            neque enim labore laborum nobis placeat minima nisi deleniti saepe
-            eius.
+            Comitted to brightening your day. Discover your favorite patterns!
           </span>
         </div>
       </div>
